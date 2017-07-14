@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 import Styles from '../App.css';
@@ -11,7 +12,6 @@ export default class ResultSlide extends React.Component {
         super(props)
 
     }
-
 
     render(){
 
@@ -31,10 +31,11 @@ export default class ResultSlide extends React.Component {
     }, 0);
 
     let winner = Math.max(...result)
-
+    let prc = parseInt(parseFloat(winner/28)*100) + '%'
     if (result !== 0 ){
         indx = result.indexOf(winner)
     }
+
 
     const career = careers[indx]
 
@@ -45,6 +46,7 @@ export default class ResultSlide extends React.Component {
             <h3 className={Styles.resultSubtitle}>{career.subtitle}</h3>
             <p className={Styles.resultDescription}>{career.description}</p>
             <a href={career.link} className={Styles.findOutMore}>Find Out More</a>
+            <h1>{prc}</h1>
             <h4>Results:</h4>
             <h5>classroom: {result[0]}</h5>
             <h5>live online: {result[1]}</h5>
