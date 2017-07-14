@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.introParagraphContainer{ 
+  text-align: center;
+}
+
 .questionTitle {
   margin-bottom: 30px;
   font-family: "Open Sans", sans-serif;

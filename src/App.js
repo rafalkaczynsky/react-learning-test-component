@@ -1,84 +1,12 @@
 import React, { Component } from 'react';
 
-import Styles from './App.css';
+import './App.css';
 
-import IntroImage from './images/intro.png';
-import ResultImage from './images/result.png';
 import QuestionOneImage from './images/question1.png';
 import QuestionTwoImage from './images/question2.png';
 
+import {SlideContainer} from './components'
 
-const IntroSlide = ({onBegin}) => {
-  return (
-    <div className={Styles.slide}>
-      <img src={IntroImage} className={Styles.image} alt="Begin Quiz" />
-      <h1>WHICH ACCOUNTANCY PROFESSION SUITS YOU?</h1>
-      <div>
-        <p>{introParagraphOne}</p>
-        <p>{introParagraphTwo}</p>
-      </div>
-      <button onClick={onBegin} className={Styles.beginButton}>Begin</button>
-    </div>
-  )
-};
-
-const ResultSlide = ({answers}) => {
-  const result = answers.reduce((prev, curr, i) => {
-    return prev + questions[i].answers.find(a => a.answer === curr).weight;
-  }, 0);
-  
-  const career = careers.find((career) => {
-    return result >= career.range[0] && result <= career.range[1];
-  }) 
-
-  return (
-    <div className={Styles.slide}>
-      <img src={ResultImage} className={Styles.image} alt="Result" />
-      <h1 className={Styles.resultTitle}>Have you considered {career.name}?</h1>
-      <h3 className={Styles.resultSubtitle}>{career.subtitle}</h3>
-      <p className={Styles.resultDescription}>{career.description}</p>
-      <a href={career.link} className={Styles.findOutMore}>Find Out More</a>
-    </div>
-  )
-};
-
-const QuestionSlide = ({question, onAnswered}) => {
-  const answers = question.answers.map((answer) => {
-    return <span className={Styles.answer}
-                 key={answer.answer}
-                 onClick={() => onAnswered(answer.answer)}>
-             {answer.answer}
-           </span>
-  });
-
-  return (
-    <div className={Styles.slide}>
-      <img src={question.image} className={Styles.questionImage} alt="Begin Quiz" />
-      <h1 className={Styles.questionTitle}>{question.question}</h1>
-      <div className={Styles.answers}>
-        {answers}
-      </div>
-    </div>
-  );
-};
-
-const SlideContainer = ({ answers, begun, onAnswered, onBegin }) => {
-  const width = `${questions.length+2}00%`;
-  const marginLeft = `-${answers.length+begun}00%`;
-  return (
-    <div className={Styles.slides} style={{width, marginLeft}}>
-      <IntroSlide onBegin={onBegin} />
-      {renderQuestions(onAnswered)}
-      <ResultSlide answers={answers}/>
-    </div>
-  );
-};
-
-const renderQuestions = (onAnswered) => {
-  return questions.map((question, i) => {
-    return <QuestionSlide key={i} question={question} onAnswered={onAnswered} />;
-  });
-}
 
 class App extends Component {
   constructor(props) {
@@ -99,11 +27,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className={Styles.app}>
+      <div className="app">
         <SlideContainer answers={this.state.answers} 
                         begun={this.state.begun}
                         onAnswered={(answer) => this.answerQuestion(answer)}
-                        onBegin={this.begin} />
+                        onBegin={this.begin} 
+                        questions={questions}     
+                        careers={careers}           
+        />                      
       </div>
     );
   }
@@ -111,13 +42,6 @@ class App extends Component {
 
 export default App;
 
-const introParagraphOne = `
-Have you thought about becoming an Accountant, but don't know whether you'd be better as a Financial or Management Accountant? Don't know the difference between an Auditor or a Bookkeeper?
-`;
-
-const introParagraphTwo = `
-Take this short quiz to discover the accounting careers and salaries that might suit you.
-`;
 
 const questions = [{
   question: 'HOW WOULD YOU DESCRIBE YOUR ATTITUDE TO RULES?',
