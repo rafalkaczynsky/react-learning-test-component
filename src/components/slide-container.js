@@ -8,7 +8,7 @@ import {IntroSlide, QuestionSlide, ResultSlide} from './'
 export default class SlideContainer extends React.Component {
     render(){
 
-        const { careers, questions, answers, begun, onAnswered, onBegin } = this.props
+        const { careers, questions, answers, begun, onAnswered, onBegin, title, introParagraphOne, introParagraphTwo } = this.props
 
         const width = `${questions.length+2}00%`;
         const marginLeft = `-${answers.length+begun}00%`;
@@ -21,7 +21,7 @@ export default class SlideContainer extends React.Component {
  
         return(
             <div className={Styles.slides} style={{width, marginLeft}}>
-                <IntroSlide onBegin={onBegin} />
+                <IntroSlide onBegin={onBegin} title={title} introParagraphOne={introParagraphOne} introParagraphTwo={introParagraphTwo}/>
                       {renderQuestions(onAnswered)}
                 <ResultSlide answers={answers} careers={careers} questions={questions}/>
             </div>
