@@ -2,9 +2,9 @@ import QuestionOneImage from '../images/question1.png'; // needs to be changed
 import QuestionTwoImage from '../images/question2.png'; // needs to be changed
 
 export default { 
-  introParagraphOne: `You've decided on your qualification and you're excited to get started. But there is one more question for you to answer - and it may be the most important. How should you study? `,
-  introParagraphTwo: `Your unique learning style can make all the difference to your exam success. Pick the wrong study method and you may face a tough journey, even if you are well suited to the subject. `,
-  title:'FIND YOUR IDEAL STUDY METHOD IN JUST & QUESTIONS',
+  introParagraphOne: "This short quiz will help you find out which study method might suit you best and why and there is no shortage of study options available to suit your specific strengths and needs.",
+  introParagraphTwo: "At the end we'll even give you more details about the course, why it would suit you and even a chance to try it out for free!",
+  title: "If you're here, you're already thinking about embarking on a Kaplan course — but what you might not have thought about, is how you're going to do it.",
   questions: [{
     question: 'Do you prefer to work in a team or on your own?',
     image: QuestionOneImage,
@@ -230,7 +230,7 @@ export default {
         // Distance Learning = 1 OnDemand = 2 Live Online=3 Classroom = 4
       },]
     }],
-  careers: [{
+  studyMethods: [{
     name: 'Classroom',
     subtitle: 'Classroom Win',
     description: 'Description needs to be done',

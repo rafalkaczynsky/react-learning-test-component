@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
       answers: [],
       begun: false,
+      
     };
   }
 
@@ -36,7 +37,7 @@ class App extends Component {
                         introParagraphOne={data.introParagraphOne}
                         introParagraphTwo={data.introParagraphTwo}
                         questions={data.questions}     
-                        careers={data.careers}           
+                        studyMethods={data.studyMethods}           
         />                      
       </div>
     );

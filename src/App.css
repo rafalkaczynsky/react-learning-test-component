@@ -1,6 +1,22 @@
+html, body { 
+  background: url("./images/background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;   
+   overflow: hidden; 
+   position: relative; 
+   height: 100vh;
+   width: 100%;
+   font-size: 16px; 
+}
+
+
+
 .app {
   display: block;
   max-width: 900px;
+  height: 100vh;
   width: 90%;
   margin: 10px auto;
   background: #ddd;
@@ -8,26 +24,55 @@
   text-align: center;
   overflow: hidden;
 }
-
+.title {
+  color: #77777a;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3vh;
+}
 .slides {
   display: flex;
   margin: 0;
   padding: 0;
+  height: 100vh;
   transition: all 0.1s linear;
 }
 
 .slide {
   flex: 1 0 100px;
   margin: 0;
-  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.introContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 10%; 
+}
+
+.questionContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5% 10%; 
+  color: #77777a;
+  width: 70%;
+}
+
 .introParagraphContainer{ 
   text-align: center;
+  color: #77777a;
+  font-size: 1.5vh;
 }
 
 .questionTitle {
@@ -37,38 +82,177 @@
   margin-top: 10px;
   line-height: 1.1;
   color: inherit;
-  font-size: 40px;
-  text-transform: uppercase;
+  font-size: 4vh;
+  text-align: center;
 }
 
 .answers {
   display: flex;
-  align-self: stretch;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-.answer {
-  text-align: center;
+.answerCircle {
   cursor: pointer;
-  flex: 1 0 10px;
-  margin: 5px;
-  padding: 20px 5px;
-  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
   background: #00a5d9;
+  float: left;
+  position: relative;
+}
+
+
+.answerContainer {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.answerContainer:first-child {
+  justify-content: flex-start;
+}
+
+.answerText {
+  position: absolute;
+  width: 16vh;
+  left: -7vh;
+  top: 45px;    
+  font-size: 2vh
+}
+
+@media only screen and (max-width: 413px) {
+    .answerText {
+      width: 12vh;
+      left: -4vh;
+    }
+    .questionContainer{
+      width: 90%;
+    }
+    .answerText {
+      font-size: 1.5vh;
+    }
+}
+
+@media only screen  and (max-height: 500px){
+    .title{
+      font-size: 5vh;
+    }
+
+    .introParagraphContainer{
+      font-size: 2.5vh;
+    }
+    .answerText {
+      width: 22vh;
+      left: -8vh;
+    }
+
+    .selectLable {
+      font-size: 3.6vh!important;
+      margin: 0px;
+      display: none;
+    }
+
+ 
+    .answerText {
+      font-size: 3vh;
+    }
+
+   .beginButtonWrapper{
+      position: fixed;
+      bottom: 15px;
+    }
+
+   .beginButton{
+     font-size: 3vh!important;
+   }
+
+
+
+    .select {
+      border: 1px solid lightgrey;
+      margin-bottom: 30px;
+      color: grey;
+      font-size: 3vh!important;
+    }
+}
+
+.questionContainer{
+  width: 80%;
+  justify-content: space-between;
+}
+
+.questionContentContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.7
+}
+
+.answerContainer:nth-child(2){
+  margin-right: 5%;  
+}
+
+.answerContainer:nth-child(3){
+  margin-left: 5%;  
+}
+.answerContainer:nth-child(4) {
+  justify-content: flex-end;
+}
+
+.horizontalrule {
+  position: absolute;
+  height: 5px;
+  left: 0px;
+  right: 0px;
+  background: #00a5d9;
+}
+.answerText {
+  text-align: center;
 }
 
 .beginButton {
-  background: #00a5d9;
-  padding: 10px 25px;
+  background: #abe400;
+  box-sizing: border-box;
+  padding: 2vh 4vh;
   border: none;
-  color: white;
-  font-size: 30px;
-  margin: 25px;
-  text-transform: uppercase;
+  border-radius: 5px;
+  color: black;
+  font-size: 2vh;
   cursor: pointer;
 }
 
+.beginButtonWrapper{
+  margin-top: 0px;
+  padding: 5px;
+  border: 2px solid #c5c1c0;
+  border-radius: 5px;
+}
+
+.selectLable {
+ color: #77777a;
+ text-align: center;
+ font-size: 1.6vh;
+}
+
+.select {
+  border: 1px solid lightgrey;
+  margin-bottom: 30px;
+  color: grey;
+  padding: 5px;
+  font-size: 2vh;
+}
+
 .image {
-  max-height: 200px;
+  max-width: 30vh;
   margin-top: 5px;
 }
 
@@ -98,9 +282,6 @@
   text-transform: uppercase;
 }
 
-.resultDescription {
-}
-
 .findOutMore {
   display: inline-block;
   background: #00a5d9;
@@ -113,3 +294,4 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
