@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import {SlideContainer} from './components'
-
+import Styles from './App.css';
 import {default as data} from './data/set-of-questions-two'
 
 class App extends Component {
@@ -28,6 +28,7 @@ class App extends Component {
 
     console.log(this.state.answers)
     return (
+      <div>
       <div className="app">
         <SlideContainer answers={this.state.answers} 
                         begun={this.state.begun}
@@ -39,6 +40,7 @@ class App extends Component {
                         questions={data.questions}     
                         studyMethods={data.studyMethods}           
         />                      
+      </div>
       </div>
     );
   }

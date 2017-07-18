@@ -2,7 +2,7 @@
 import React from 'react'
 
 import Styles from '../App.css';
-import ResultImage from '../images/result.png';
+import ResultImage from '../images/result-image.png';
 
 import {
     ClassroomDescription, 
@@ -67,7 +67,37 @@ export default class ResultSlide extends React.Component {
 
     return(
         <div className={Styles.slide}>
-            <img src={ResultImage} className={Styles.image} alt="Result" />
+            <div className={Styles.resultsContainer}>
+                <div className={Styles.yourResults}>Your results</div>
+                <img src={ResultImage} className={Styles.image} alt="Result" />
+                {qualificationSelected!== 'Other' &&
+                <div>
+                    <div className={Styles.theBestCaption}>The best study method for you is:</div>
+                    <div className={Styles.theBestResult}><strong>{bestStudyMethod.name}</strong></div>
+                </div>}
+                <div>
+                    {qualificationSelected === 'Other' && OtherDescription()}
+                    {RenderDescription(bestStudyMethod, qualificationSelected)}
+                </div>
+                <div>
+                    Apply for your course today!
+                </div>
+                <div className={Styles.beginButtonWrapper}>
+                    <button  className={Styles.beginButton}>Apply now</button>
+                </div>
+            </div>
+        </div>)
+    }
+}
+ /*
+
+If ACCA Selected, no weighting given to OnDemand in questions and only ACCA Demos presented
+CIMA	If CIMA selected, only CIMA Demos presented 
+AAT	If AAT Selected, only AAT Demos presented
+Other/Unsure	If Unsure selected, a range of demos and more course info presented
+
+
+
             {qualificationSelected!== 'Other' &&
             <div>
                 <h1 className={Styles.resultTitle}>Have you considered {bestStudyMethod.name}?</h1>
@@ -81,16 +111,4 @@ export default class ResultSlide extends React.Component {
                 <h5>onDemand: {result[2]}</h5>
                 <h5>distance learning: {result[3]}</h5>
             </div>}
-            {qualificationSelected=== 'Other' && OtherDescription()}
-            {RenderDescription(bestStudyMethod, qualificationSelected)}
-        </div>)
-    }
-}
- /*
-
-If ACCA Selected, no weighting given to OnDemand in questions and only ACCA Demos presented
-CIMA	If CIMA selected, only CIMA Demos presented 
-AAT	If AAT Selected, only AAT Demos presented
-Other/Unsure	If Unsure selected, a range of demos and more course info presented
-
 */

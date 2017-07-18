@@ -22,7 +22,11 @@ html, body {
   text-align: center;
   overflow: hidden;
 }
-
+/*
+.header{
+  background-color:#39408d;
+}
+*/
 .title {
   color: #77777a;
   font-weight: normal;
@@ -172,7 +176,7 @@ html, body {
       display: none;
     }
 
- 
+ color="#39408d"
     .answerText {
       font-size: 3vh;
     }
@@ -315,4 +319,28 @@ button[disabled]{
 
 .counter {
   font-size: 2vh;
+}
+
+.resultsContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #77777a; 
+}
+
+.yourResults{
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.theBestCaption{
+  font-size: 4.3vh;
+  text-align: center
+}
+
+.theBestResult{
+  font-size: 4.3vh;
+  text-align: center
 }

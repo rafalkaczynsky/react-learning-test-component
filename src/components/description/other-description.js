@@ -1,10 +1,11 @@
 import React from 'react'
+import Styles from '../../App.css';
 
 const OtherDescription = () => {
         return (
-            <h2>
-                Unsure/Other, description placeholder 
-            </h2>
+            <div>
+                className={Styles.descriptionContainer}
+            </div>
         )
     }
 

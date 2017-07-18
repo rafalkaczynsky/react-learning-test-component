@@ -1,23 +1,24 @@
 import React from 'react'
+import Styles from '../../App.css';
 
 const ClassroomDescription = (qualificationSelected) => {
 
         if (qualificationSelected === 'ACCA') return (
-            <h2>
+            <div className={Styles.descriptionContainer}>
                 Classroom - ACCA, description placeholder 
-            </h2>
+            </div>
         )
 
         if (qualificationSelected === 'AAT') return (
-            <h2>
+            <div>
                 Classroom - AAT, description placeholder
-            </h2>
+            </div>
         )
 
         if (qualificationSelected === 'CIMA') return (
-            <h2>
+            <div>
                 Classroom- CIMA, description placeholder
-            </h2>
+            </div>
         )
     }
 

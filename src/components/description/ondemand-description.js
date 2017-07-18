@@ -1,23 +1,24 @@
 import React from 'react'
+import Styles from '../../App.css';
 
 const OnDemandDescription = (qualificationSelected) => {
 
         if (qualificationSelected === 'ACCA') return (
-            <h2>
+            <div className={Styles.descriptionContainer}>
                 OnDemand - ACCA, description placeholder 
-            </h2>
+            </div>
         )
 
         if (qualificationSelected === 'AAT') return (
-            <h2>
+            <div className={Styles.descriptionContainer}>
                 OnDemand - AAT, description placeholder
-            </h2>
+            </div>
         )
 
         if (qualificationSelected === 'CIMA') return (
-            <h2>
-                OnDemand - CIMA, description placeholder
-            </h2>
+            <div className={Styles.descriptionContainer}>
+                OnDemand  - CIMA, description placeholder
+            </div>
         )
     }
 
