@@ -11,8 +11,6 @@ html, body {
    font-size: 16px; 
 }
 
-
-
 .app {
   display: block;
   max-width: 900px;
@@ -24,12 +22,14 @@ html, body {
   text-align: center;
   overflow: hidden;
 }
+
 .title {
   color: #77777a;
   font-weight: normal;
   text-align: center;
   font-size: 3vh;
 }
+
 .slides {
   display: flex;
   margin: 0;
@@ -41,8 +41,6 @@ html, body {
 .slide {
   flex: 1 0 100px;
   margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -103,8 +101,22 @@ html, body {
   background: #00a5d9;
   float: left;
   position: relative;
+  border: none;
+  z-index: 100;
 }
 
+
+
+.answerCircle:focus{
+  background: #f3e2c7; /* Old browsers */
+  background: -webkit-linear-gradient(#f3e2c7 0%, #c19e67 1%, #e9d4b3 100%);
+  background: -moz-linear-gradient(#f3e2c7 0%, #c19e67 1%, #e9d4b3 100%);
+  background: -o-linear-gradient(#f3e2c7 0%, #c19e67 1%, #e9d4b3 100%);
+  background: linear-gradient(#f3e2c7 0%, #c19e67 1%, #e9d4b3 100%); /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=0 ); /* IE6-9 */
+  border: none;
+  outline: none;
+}
 
 .answerContainer {
   width: 25%;
@@ -124,19 +136,20 @@ html, body {
   width: 16vh;
   left: -7vh;
   top: 45px;    
-  font-size: 2vh
+  font-size: 2vh;
+  color: #77777a;
 }
 
-@media only screen and (max-width: 413px) {
+@media only screen and (max-width: 415px) {
     .answerText {
-      width: 12vh;
-      left: -4vh;
+      width: 10vh;
+      left: -3vh;
     }
     .questionContainer{
-      width: 90%;
+      width: 95%;
     }
     .answerText {
-      font-size: 1.5vh;
+     font-size: 1.5vh;
     }
 }
 
@@ -149,8 +162,8 @@ html, body {
       font-size: 2.5vh;
     }
     .answerText {
-      width: 22vh;
-      left: -8vh;
+      width: 36vh;
+      left: -16vh;
     }
 
     .selectLable {
@@ -172,8 +185,6 @@ html, body {
    .beginButton{
      font-size: 3vh!important;
    }
-
-
 
     .select {
       border: 1px solid lightgrey;
@@ -295,3 +306,13 @@ html, body {
   cursor: pointer;
 }
 
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.counter {
+  font-size: 2vh;
+}
