@@ -26,7 +26,7 @@ export default class SlideContainer extends React.Component {
 
     render(){
 
-        const { studyMethods, questions, answers, begun, onAnswered, onBegin, title, introParagraphOne, introParagraphTwo } = this.props
+        const { studyMethods, questions, answers, begun, onAnswered, onBegin, mainTitle, title, introParagraphOne, introParagraphTwo } = this.props
 
         const width = `${questions.length+2}00%`;
         const marginLeft = `-${answers.length+begun}00%`;
@@ -52,6 +52,7 @@ export default class SlideContainer extends React.Component {
             <div className={Styles.slides} style={{width, marginLeft}}>
                 <IntroSlide 
                     onBegin={onBegin} 
+                    mainTitle={mainTitle}
                     title={title} 
                     introParagraphOne={introParagraphOne} 
                     introParagraphTwo={introParagraphTwo}

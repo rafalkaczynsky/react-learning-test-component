@@ -34,6 +34,7 @@ class App extends Component {
                         begun={this.state.begun}
                         onAnswered={(answer) => this.answerQuestion(answer)}
                         onBegin={this.begin} 
+                        mainTitle={data.mainTitle}
                         title={data.title}
                         introParagraphOne={data.introParagraphOne}
                         introParagraphTwo={data.introParagraphTwo}

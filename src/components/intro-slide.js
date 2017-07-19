@@ -6,21 +6,21 @@ import IntroImage from '../images/circle.png';
 export default class IntroSlide extends React.Component {
     render(){
 
-        const {onBegin, title, introParagraphOne, introParagraphTwo, qualificationSelected, onChange} = this.props
+        const {onBegin, title, mainTitle, introParagraphOne, introParagraphTwo, qualificationSelected, onChange} = this.props
 
         return(
-            <div className={Styles.slide}>
+            <div className={Styles.slide} >
 
                 <div className={Styles.introContainer}>
                 <img src={IntroImage} className={Styles.image} alt="Begin Quiz" />
-                <h1 className={Styles.title}>{title}</h1>
+                <h1  className={Styles.mainTitle}>{mainTitle}</h1>
                 <div className={Styles.introParagraphContainer}>
                     <p>{introParagraphOne}</p>
-                    <p>{introParagraphTwo}</p>
+                  
                 </div>
               {/*  <h4 className={Styles.selectLable}>Choose the qualification you are interested in: </h4>*/}
                 <select className={Styles.select} value={qualificationSelected} onChange={onChange}>
-                    <option value="" disabled selected>Choose the qualification you are interested in:</option>
+                    <option value="" disabled selected>Choose the qualification</option>
                     <option value="ACCA" >ACCA</option>
                     <option value="CIMA" >CIMA</option>
                     <option value="AAT" >AAT</option>  

@@ -25,7 +25,6 @@ export default class ResultSlide extends React.Component {
     render(){
 
     const {answers, studyMethods, questions, qualificationSelected} = this.props
-
     const result = answers.reduce((prev, curr, i) => {
 
         let final = []
@@ -49,11 +48,6 @@ export default class ResultSlide extends React.Component {
 
 
     const bestStudyMethod = studyMethods[indx]
-
-/**
- * 
- *  render 
- */
 
     const RenderDescription = (bestStudyMethod, qualificationSelected) => {
     
