@@ -9,28 +9,42 @@ export default class QuestionSlide extends React.Component {
         super(props)
 
         this.state = {
-            answserSelected: '', 
             buttonDisabled: true,
+            chosenAnswer: '',
         }
     }
 
-    render(){
+    handle(e){
+        e.target.focus();
 
-        const {question, onAnswered, numberOfQuestions, index} = this.props
-        
+        let answer = e.target.value
+        this.setState({chosenAnswer: answer, buttonDisabled: false})
+        console.log(this.state.chosenAnswer)
+    }
+
+    render(){
+        const {question, onAnswered, onPrevius, numberOfQuestions, index} = this.props
         const answersButton = question.answers.map((answer, i) => {
             return (
                 <div className={Styles.answerContainer}>
                     <button 
                         className={Styles.answerCircle}
                         key={answer.answer}
-                        onClick={() => this.setState({answerSelected: answer.answer, buttonDisabled: false})}>
+                        tabindex={i}
+                        value={answer.answer}
+                        onClick={this.handle.bind(this)}>
                         <div 
                             className={Styles.answerText}
-                            key={answer.answer + 'text'}>
+                            key={answer.answer + 'text'}
+                            style={{"z-index": i + 1}}
+                            >
                             {answer.answer}
+        
                         </div>
-                        {/*<span className={Styles.whiteCircle}></span>*/}
+                            <span 
+                            key={answer.answer + i}
+                            className={Styles.whiteCircle}
+                            ></span>
                      </button>
                 </div>
             )
@@ -50,16 +64,20 @@ export default class QuestionSlide extends React.Component {
                           {/*  <div className={Styles.horizontalrule}></div>*/}
                         </div>
                     </div>
-                <div className={Styles.nextButtonWrapper}>
-                    <button 
-                        className={Styles.beginButton}
-                        disabled={this.state.buttonDisabled}
-                        onClick={() => onAnswered(this.state.answerSelected)}>
-                            Next
-                    </button>
+                    <div className={Styles.prevNextButtonWrapper}>
+                        <button 
+                            className={Styles.previusButton}
+                            onClick={() => onPrevius()}>
+                                Previus
+                        </button>
+                        <button 
+                            className={Styles.nextButton}
+                            disabled={this.state.buttonDisabled}
+                            onClick={() => onAnswered(this.state.chosenAnswer)}>
+                                Next
+                        </button>
+                    </div>
                 </div>
-                </div>
-
             </div>
         )
     }

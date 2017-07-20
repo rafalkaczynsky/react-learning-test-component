@@ -24,6 +24,12 @@ class App extends Component {
     this.setState({answers: [...this.state.answers, answer]});
   }
 
+  onPrevius = (answer) => {
+    let answers = this.state.answers;
+    let newAnswers = answers.pop()
+    this.setState({anserws: newAnswers})
+  }
+
   render() {
 
     console.log(this.state.answers)
@@ -33,6 +39,7 @@ class App extends Component {
         <SlideContainer answers={this.state.answers} 
                         begun={this.state.begun}
                         onAnswered={(answer) => this.answerQuestion(answer)}
+                        onPrevius={(answer) => this.onPrevius()}
                         onBegin={this.begin} 
                         mainTitle={data.mainTitle}
                         title={data.title}
