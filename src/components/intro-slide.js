@@ -45,6 +45,9 @@ export default class IntroSlide extends React.Component {
                     <div className={Styles.beginButtonWrapper}>
                         <button onClick={onBegin} className={Styles.beginButton}>Take the quiz!</button>
                     </div>
+                    <div className={Styles.beginButtonWrapper}>
+                        <button onClick={onBegin} className={Styles.beginButton}>Take the quiz!</button>
+                    </div>
                 </div>
             </div>
         )

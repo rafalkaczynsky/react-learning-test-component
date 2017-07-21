@@ -34,7 +34,7 @@ class App extends Component {
 
     console.log(this.state.answers)
     return (
-      <div>
+      <div>  
       <div className="app">
         <Header/>
         <SlideContainer answers={this.state.answers} 

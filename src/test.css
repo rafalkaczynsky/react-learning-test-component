@@ -1,12 +1,13 @@
 
+
 html, body { 
-   background-color: #f8f7f6;
+   background-color: #f0f0f0;
    overflow: hidden; 
    position: relative; 
    height: 100vh;
    width: 100%;
    font-size: 16px; 
-   font: normal 14px/1.5 Open Sans,sans-serif;
+    font: normal 14px/1.5 Open Sans,sans-serif;
     -webkit-font-smoothing: antialiased;
    font-weight: 400;
    -ms-text-size-adjust: 100%; 
@@ -17,7 +18,7 @@ html, body {
 .app {
   display: block;
   max-width: 900px;
-  height: 100%;
+  height: 100vh;
   width: 90%;
   margin: 10px auto;
   padding-left: 5px;
@@ -25,6 +26,7 @@ html, body {
   background: #ddd;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
    font: normal 14px/1.5 Open Sans,sans-serif;
 }
 .header {
@@ -33,9 +35,6 @@ html, body {
   height: 10vh;
   padding: 1%;
   padding-left: 3%;
-}
-.headerLogo {
-  height: 95%;
 }
 .title {
   color: #77777a;
@@ -49,7 +48,8 @@ html, body {
     color: #77777a;
     margin: 2vh 0;
     text-align: center;
-    font-size: 30px;
+    font-size: 3vh;
+    text-transform: uppercase;
     font-weight: 400;
 }
 
@@ -57,17 +57,18 @@ html, body {
   display: flex;
   margin: 0;
   padding: 0;
+  height: 100vh;
   transition: all 0.6s ease-in-out;
 }
 
 .slide {
   flex: 1 0 100px;
   margin: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
+
 }
 
 .introContainer {
@@ -76,40 +77,38 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 10% 0% 10%; 
-  overflow-y: scroll!important;
-  height: 100vh!important;
+  padding: 5% 10%; 
 }
 
-/* questionSLides*/
-
-.iconIntroContainer{
-  display: block;
-  text-align: center;
-  flex-direction: row;
+.questionContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   align-items: center;
-  justify-content: center; 
+  justify-content: space-between;
+  padding: 2% 2%;
+  color: #333333;
+  width: 70%;
 }
 
 .introParagraphContainer{ 
   text-align: center;
   color: #77777a;
-  font-size: 23px;
+  font-size: 2.3vh;
+  line-height: 3.4vh;
   margin-top: -2vh;
-}
-
-.introParagraphContainer > p {
 }
 
 .questionTitle {
   margin-bottom: 30px;
   font-family: "Open Sans", sans-serif;
+  font-weight: 100;
   margin-top: 10px;
   line-height: 1.1;
-  color: #77777a;
+  color: inherit;
   font-size: 4.5vh;
   text-align: center;
- 
+  text-transform: uppercase;
 }
 
 .answers {
@@ -132,7 +131,6 @@ html, body {
     border-top: 2px solid darkblue;
 }
 /* answer Red Circle buttons */
-
 .answerCircle {
   cursor: pointer;
   width: 30px;
@@ -144,6 +142,7 @@ html, body {
   border: none;
   z-index: 100;
   -webkit-tap-highlight-color: red;
+  
 }
 
 .answerCircle:active{
@@ -191,6 +190,9 @@ html, body {
   display: block;
 }
 
+/*safari*
+/*SAFARI END*/
+
 .answerContainer {
   width: 25%;
   text-align: center;
@@ -204,12 +206,9 @@ html, body {
   justify-content: flex-start;
 }
 
-.forthParagraph {
-  font-weight: bold;
-  font-size: 1.1em;
-}
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 415px) {
     .answerText {
       width: 20vw!important;
       left: -7vw!important;
@@ -217,9 +216,6 @@ html, body {
     }
     .questionContainer{
       width: 95%;
-    }
-    .iconIntroContainer{
-      display: block;
     }
 }
 
@@ -246,17 +242,15 @@ html, body {
       display: none;
     }
 
+    .select {
+      border: 1px solid lightgrey;
+      color: grey;
+    }
 }
 
-.questionContainer {
-  padding: 2% 2%;
-  color: #333333;
-  width: 70%; 
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
+.questionContainer{
+  width: 80%;
+  flex: 1;
 }
 
 .questionContentContainer{
@@ -275,7 +269,6 @@ html, body {
 .answerContainer:nth-child(3){
   margin-left: 5%;  
 }
-
 .answerContainer:nth-child(4) {
   justify-content: flex-end;
 }
@@ -285,6 +278,7 @@ html, body {
   height: 3px;
   left: 0px;
   right: 0px;
+ 
   background: #004b7d;
 }
 
@@ -296,64 +290,9 @@ html, body {
   color: #343434;
   width: 10vw;
   left: -4vw;
-
-  width: 20vw!important;
-  left: -7vw!important;
-  font-size: 1.5vh!important;
 }
-
-
-
 
 .beginButton {
-  background: #abe400;
-  box-sizing: border-box;
-  padding: 10px 30px;
-  border-radius: 5px;
-  color: black;
-  font-size: 2.5vh; /*font-size: 18px;*/
-  cursor: pointer;
-  border: 0 none;
-  cursor: pointer;
-  display:inline-block;
-  height: 8vh;
-  line-height: 4vh;
-  margin:0;
-  overflow: hidden;
-  max-width: 250px;
-    /*width: 100%;*/
-}
-
-.beginButtonNew {
-  background: #abe400;
-  box-sizing: border-box;
-  padding: 10px 30px;
-  border-radius: 5px;
-  color: black;
-  font-size: 2.5vh; /*font-size: 18px;*/
-  cursor: pointer;
-  border: 0 none;
-  cursor: pointer;
-  display:inline-block;
-  height: 8vh;
-  width: 30vw;
-  line-height: 4vh;
-  margin:0;
-  overflow: hidden;
-  max-width: 250px;
-    /*width: 100%;*/
-}
-
-.beginButtonWrapper{
- 
-  margin: 10px;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  padding: 5px
-}
-
-.nextButton {
-  flex:1;
   background: #00a5d9;
   box-sizing: border-box;
   padding: 2vh 13vw;
@@ -367,6 +306,29 @@ html, body {
   cursor: pointer;
   display:inline-block;
   height: 8vh;
+  line-height: 4vh;
+  margin:0;
+  overflow: hidden;
+  text-align: left;
+    /*width: 100%;*/
+}
+
+.nextButton {
+  flex:1;
+  background: #00a5d9;
+  box-sizing: border-box;
+  padding: 2vh 13vw;
+  border: none;
+  color: white;
+  font-size: 2.5vh; /*font-size: 18px;*/
+  cursor: pointer;
+  background-color: #00a5d9;
+  border: 0 none;
+
+  color: #fff !important;
+  cursor: pointer;
+  display:inline-block;
+  height: 8vh;
   width: 37vw;
   line-height: 4vh;
   margin: 0 auto;
@@ -376,7 +338,6 @@ html, body {
   max-width: 350px;
     /*width: 100%;*/
 }
-
 .previusButton {
   color: #333 !important;
   flex:1;
@@ -401,12 +362,10 @@ html, body {
 
 .prevNextButtonWrapper{
   display: flex;
-  width: 100%;
   flex: 0.4;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-end;
   justify-content: center;
-
 }
 
 .selectLable {
@@ -418,16 +377,13 @@ html, body {
 .select {
   border: 1px solid lightgrey;
   color: grey;
-  background: white;
-  padding: 3px;
-  height: 20px!important;
+  font-size: 3vh;
+  margin-top: -10px;
+  margin-bottom: 2vh;
 }
 
 .image {
-  min-width: 130px!important;
-  max-width: 230px!important;
-  margin: auto;
-  width: 20vw;
+  width: 20vh;
   margin-top: 5px;
 }
 
@@ -519,6 +475,9 @@ button[disabled]{
 
 .blue{
   background-color : blue;
-  width: 40px;
+    width: 40px;
   height: 40px;
 }
+
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

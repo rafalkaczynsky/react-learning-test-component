@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Styles from '../App.css';
-import IntroImage from '../images/circle.png';
+import IntroImage from '../images';
 
 export default class QuestionSlide extends React.Component {
 
@@ -65,17 +65,14 @@ export default class QuestionSlide extends React.Component {
                         </div>
                     </div>
                     <div className={Styles.prevNextButtonWrapper}>
-                        <button 
-                            className={Styles.previusButton}
-                            onClick={() => onPrevius()}>
-                                Previus
-                        </button>
-                        <button 
-                            className={Styles.nextButton}
-                            disabled={this.state.buttonDisabled}
-                            onClick={() => onAnswered(this.state.chosenAnswer)}>
-                                Next
-                        </button>
+                        <div className={Styles.beginButtonWrapper}>
+                            <button 
+                                className={Styles.beginButtonNew}
+                                disabled={this.state.buttonDisabled}
+                                onClick={() => onAnswered(this.state.chosenAnswer)}>
+                                    Next
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

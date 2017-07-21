@@ -1,4 +1,4 @@
-import QuestionOneImage from '../images/question1.png'; // needs to be changed
+import QuestionOneImage from '../images/question-icon-transparency.png'; // needs to be changed
 import QuestionTwoImage from '../images/question2.png'; // needs to be changed
 
 export default { 

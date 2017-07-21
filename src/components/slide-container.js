@@ -65,6 +65,7 @@ export default class SlideContainer extends React.Component {
 
         return(
             <div className={Styles.slides} style={{width, marginLeft, opacity: 1}}>
+                
                 <IntroSlide 
                     onBegin={onBegin} 
                     mainTitle={mainTitle}
