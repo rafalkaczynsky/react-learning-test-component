@@ -2,7 +2,7 @@
 import React from 'react'
 
 import Styles from '../App.css';
-import ResultImage from '../images/result-image.png';
+import ResultImage from '../images/book-icon-trans.png';
 
 import {
     ClassroomDescription, 
@@ -41,6 +41,7 @@ export default class ResultSlide extends React.Component {
     }, 0);
 
     let winner = Math.max(...result)
+    
     let prc = parseInt(parseFloat(winner/28)*100) + '%'
     if (result !== 0 ){
         indx = result.indexOf(winner)
@@ -61,25 +62,8 @@ export default class ResultSlide extends React.Component {
 
     return(
         <div className={Styles.slide}>
-            <div className={Styles.resultsContainer}>
-                <div className={Styles.yourResults}>Your results</div>
-                <img src={ResultImage} className={Styles.image} alt="Result" />
-                {qualificationSelected!== 'Other' &&
-                <div>
-                    <div className={Styles.theBestCaption}>The best study method for you is:</div>
-                    <div className={Styles.theBestResult}><strong>{bestStudyMethod.name}</strong></div>
-                </div>}
-                <div>
-                    {qualificationSelected === 'Other' && OtherDescription()}
-                    {RenderDescription(bestStudyMethod, qualificationSelected)}
-                </div>
-                <div>
-                    Apply for your course today!
-                </div>
-                <div className={Styles.beginButtonWrapper}>
-                    <button  className={Styles.beginButton}>Apply now</button>
-                </div>
-            </div>
+            {qualificationSelected === 'Other' && OtherDescription()}
+            {RenderDescription(bestStudyMethod, qualificationSelected)}           
         </div>)
     }
 }

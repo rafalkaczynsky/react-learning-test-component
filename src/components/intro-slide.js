@@ -20,7 +20,6 @@ export default class IntroSlide extends React.Component {
 
         return(
             <div className={Styles.slide} >
-
                 <div className={Styles.introContainer}>
                     <div className={Styles.iconIntroContainer}>
                         <img src={Classroom} className={Styles.image} alt="Begin Quiz" />
@@ -36,7 +35,7 @@ export default class IntroSlide extends React.Component {
                         <p className={Styles.forthParagraph}>{introParagraphFour}</p>
                     </div>
                     <select className={Styles.select} value={qualificationSelected} onChange={onChange}>
-                        <option value="" disabled selected>Choose the qualification you are interested in:</option>
+                        <option value="xxxx" disabled selected >Choose the qualification you are interested in:</option>
                         <option value="ACCA" >ACCA</option>
                         <option value="CIMA" >CIMA</option>
                         <option value="AAT" >AAT</option>  
