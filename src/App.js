@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 
-import {SlideContainer} from './components'
+import {SlideContainer, Header} from './components'
 import Styles from './App.css';
 import {default as data} from './data/set-of-questions-two'
 
@@ -36,6 +36,7 @@ class App extends Component {
     return (
       <div>
       <div className="app">
+        <Header/>
         <SlideContainer answers={this.state.answers} 
                         begun={this.state.begun}
                         onAnswered={(answer) => this.answerQuestion(answer)}
@@ -45,6 +46,8 @@ class App extends Component {
                         title={data.title}
                         introParagraphOne={data.introParagraphOne}
                         introParagraphTwo={data.introParagraphTwo}
+                        introParagraphThree={data.introParagraphThree}
+                        introParagraphFour={data.introParagraphFour}
                         questions={data.questions}     
                         studyMethods={data.studyMethods}           
         />                      

@@ -1,24 +1,25 @@
 html, body { 
-   background-color: #f0f0f0;
+   color:#f8f7f6;
    overflow: hidden; 
    position: relative; 
-   height: 100vh;
-   width: 100%;
    font-size: 16px; 
+   height:100%;
+   width: 100%;
     font: normal 14px/1.5 Open Sans,sans-serif;
     -webkit-font-smoothing: antialiased;
    font-weight: 400;
    -ms-text-size-adjust: 100%; 
    -webkit-text-size-adjust: 100%;
-   color:#333333; 
+   color:#333333;
+   overflow-y: scroll;
 }
 
 .app {
   display: block;
   max-width: 900px;
-  height: 100vh;
+  height: 100%;
   width: 90%;
-  margin: 10px auto;
+  margin: auto;
   padding-left: 5px;
   padding-right: 5px;
   background: #ddd;
@@ -27,11 +28,17 @@ html, body {
   overflow: hidden;
    font: normal 14px/1.5 Open Sans,sans-serif;
 }
-/*
-.header{
+
+.header {
   background-color:#39408d;
+  width: 100%;
+  height: 10vh;
+  padding: 1%;
+  padding-left: 3%;
 }
-*/
+.headerLogo {
+  height: 95%;
+}
 .title {
   color: #77777a;
   font-weight: normal;
@@ -45,7 +52,6 @@ html, body {
     margin: 2vh 0;
     text-align: center;
     font-size: 3vh;
-    text-transform: uppercase;
     font-weight: 400;
 }
 
@@ -53,18 +59,18 @@ html, body {
   display: flex;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
 .slide {
+  min-height: 500px;
   flex: 1 0 100px;
   margin: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .introContainer {
@@ -73,7 +79,15 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 5% 10%; 
+  padding: 3% 10% 0% 10%; 
+}
+
+.iconIntroContainer{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
 }
 
 .questionContainer {
@@ -93,6 +107,10 @@ html, body {
   font-size: 2.3vh;
   line-height: 3.4vh;
   margin-top: -2vh;
+}
+
+.introParagraphContainer > p {
+  font-size: 0.8em;
 }
 
 .questionTitle {
@@ -186,9 +204,6 @@ html, body {
   display: block;
 }
 
-/*safari*
-/*SAFARI END*/
-
 .answerContainer {
   width: 25%;
   text-align: center;
@@ -201,10 +216,14 @@ html, body {
 .answerContainer:first-child {
   justify-content: flex-start;
 }
+.forthParagraph {
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
 
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 600px) {
     .answerText {
       width: 20vw!important;
       left: -7vw!important;
@@ -212,6 +231,9 @@ html, body {
     }
     .questionContainer{
       width: 95%;
+    }
+    .iconIntroContainer{
+      display: block;
     }
 }
 
@@ -289,24 +311,29 @@ html, body {
 }
 
 .beginButton {
-  background: #00a5d9;
+  background: #abe400;
   box-sizing: border-box;
-  padding: 2vh 13vw;
-  border: none;
-  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;;
+  color: black;
   font-size: 2.5vh; /*font-size: 18px;*/
   cursor: pointer;
-  background-color: #00a5d9;
   border: 0 none;
-  color: #fff !important;
   cursor: pointer;
   display:inline-block;
   height: 8vh;
   line-height: 4vh;
   margin:0;
   overflow: hidden;
-  text-align: left;
+  max-width: 250px;
     /*width: 100%;*/
+}
+
+.beginButtonWrapper{
+  margin: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 5px
 }
 
 .nextButton {
@@ -373,13 +400,17 @@ html, body {
 .select {
   border: 1px solid lightgrey;
   color: grey;
-  font-size: 3vh;
-  margin-top: -10px;
+  background: white;
+  font-size: 1em;
+  margin: 10px;
   margin-bottom: 2vh;
 }
 
 .image {
-  width: 20vh;
+  min-width: 130px!important;
+  max-width: 230px!important;
+  margin: auto;
+  width: 20vw;
   margin-top: 5px;
 }
 
@@ -471,7 +502,6 @@ button[disabled]{
 
 .blue{
   background-color : blue;
-    width: 40px;
+  width: 40px;
   height: 40px;
 }
-

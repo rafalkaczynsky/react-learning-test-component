@@ -3,8 +3,10 @@ import QuestionTwoImage from '../images/question2.png'; // needs to be changed
 
 export default { 
   mainTitle: "Find Your Ideal Study Method In Just 7 Questions",
-  introParagraphOne: "You've decided on your qualification and you're excited to get started. But there is one more question for you to answer - and it may be the most important. How should you study? Your unique learning style can make all the difference to your exam success. Pick the wrong study method and you may face a tough journey, even if you are well suited to the subject. Luckily, there are lots of study options available that will suit your specific strengths and needs. Answer these 7 questions to find the right study method for you and then dive in for free with an in-depth demo. Now find your perfect fit and sail through those exams! ",
-  introParagraphTwo: "...",
+  introParagraphOne: "You've decided on your qualification and you're excited to get started. But there is one more question for you to answer - and it may be the most important. How should you study? Your unique learning style can make all the difference to your exam success. Pick the wrong study method and you may face a tough journey, even if you are well suited to the subject. ",
+  introParagraphTwo: "Luckily, there are lots of study options available that will suit your specific strengths and needs.",
+  introParagraphThree: "Answer these 7 questions to find the right study method for you and then dive in for free with an in-depth demo. ",
+  introParagraphFour: " Now find your perfect fit and sail through those exams!",
   title: "...",
   questions: [{
     question: 'Do you prefer to work in a team or on your own?',

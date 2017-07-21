@@ -1,0 +1,5 @@
+export {default as Classroom} from './classroom-icon-trans.png'
+export {default as DistanceLearning} from './distance-learning-icon-trans.png'
+export {default as Kaplan} from './kaplan-icon-trans.png'
+export {default as LiveOnline} from './live-online-icon-trans.png'
+export {default as OnDemand} from './ondemand-icon-trans.png'
