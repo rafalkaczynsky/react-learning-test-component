@@ -155,7 +155,7 @@ export default class DistanceLearningDescription extends React.Component {
                             </ul>
                             <p>
                                 <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/pages/ondemand.aspx">
-                                    Learn more about Distance Learning
+                                    Learn more about OnDemand
                                 </a>
                             </p>
                     </div>

@@ -42,37 +42,37 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Distance Learning. 
+                        Classroom 
                     </p>
                     <p className={Styles.paragraphResultOne}>
-                        You have the ability to stay motivated even when studying on your own and you enjoy the freedom to learn when and where you want.
+                        You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
                     </p>
                     <p className={Styles.paragraphResultTwo}>
-                        Does this sound like you? 
+                        If you are new to accountancy, AAT may be the right choice for you. 
                     </p>
                     <div className={Styles.tryWrapper}>
                         <button 
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-distance-learning-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?timetable=aat-professional"
                             >
-                                   Try your free demo now!
+                                   View your local AAT timetable now!
                         </button>
                     </div>
                 </div>
                 <div className={Styles.bottomDescription}>
                     <div className={Styles.youGet}>
                             <p>
-                                With Kaplan Distance Learning for ACCA, you get: 
+                                With Kaplan Classroom for AAT, you get: 
                             </p>
                             <ul>
-                                <li>Up to 16 hours of video tutorials</li>
-                                <li>Study materials include Study Text, Exam Kit and Pocket Notes.</li>
-                                <li>Mock exam, marked with feedback to help you prepare for the real thing.</li>
-                                <li>Tutor support with your own Personal Tutor</li>
+                                <li>A timetabled series of classes, so you will always know when they're running to plan your schedule.</li>
+                                <li>Chat directly with your tutor and your classmates during collaborative group discussions.</li>
+                                <li>Dedicated tutor support outside the classroom hours – including evenings and weekends – by LiveChat, email or you can request a callback.</li>
+                                <li>Improved MyKaplan with extra online content to help you study and revise outside the timetabled classes.</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/TRAININGANDQUALS/ACCOUNTANCY/ACCA/skills-essentials-options/Pages/distance-learning-premier.aspx">
-                                    Learn more about Distance Learning
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/classroom.aspx">
+                                    Learn more about Classroom courses
                                 </a>
                             </p>
                     </div>
@@ -81,7 +81,7 @@ export default class DistanceLearningDescription extends React.Component {
                                 <strong>OnDemand</strong>  
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    This fully online course also allows you to progress and study when it suits you, but includes extensive tutor support giving you more structure and helping you keep on track. 
+                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suit you, but includes extensive tutor support giving you course structure and helping you keep on track. 
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
@@ -89,18 +89,10 @@ export default class DistanceLearningDescription extends React.Component {
                                 <strong>Live Online</strong>  
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    If you would like a little more structure, Live Online allows you to attend timetabled lectures remotely. Though you have the structure of a timetabled course, you still get the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up with recordings if you miss any lectures.
+                                    Live Online allows you to attend timetabled lectures remotely. You still have the structure of a timetabled course, but with the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up on recordings if you miss any.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
                                 </p>}                              
                             </p>
-                            <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
-                                <strong>Classroom</strong>  
-                                {this.state.classroomShowDesc &&
-                                <p className={Styles.studyMethodSmallDesc}>
-                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to distance learning.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
-                                </p>}                                 
-                            </p> 
                     </div>
                 </div>    
             </div> 
@@ -117,10 +109,10 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Distance Learning. 
+                        Classroom
                     </p>
                     <p className={Styles.paragraphResultOne}>
-                        You have the ability to stay motivated even when studying on your own and you enjoy the freedom to learn when and where you want.
+                        You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
                     </p>
                     <p className={Styles.paragraphResultTwo}>
                         Does this sound like you? 
@@ -128,26 +120,26 @@ export default class DistanceLearningDescription extends React.Component {
                     <div className={Styles.tryWrapper}>
                         <button 
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-distance-learning-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?timetable=aat-professional"
                             >
-                                   Try your free demo now!
+                                   View your local timetable now!
                         </button>
                     </div>
                 </div>
                 <div className={Styles.bottomDescription}>
                     <div className={Styles.youGet}>
                             <p>
-                                With Kaplan Distance Learning for AAT, you get: 
+                                With Kaplan Classroom for AAT, you get:  
                             </p>
                             <ul>
-                                <li>AAT study materials including Study Text, Exam Practice Kit and Revision Cards. </li>
-                                <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat, email and UK based students can request a callback.</li>
-                                <li>Mock exam, marked with feedback to help you prepare for the real thing.</li>
-                                <li>Online learning resources covering the full syllabus. Interactive study guides, regular knowledge checks and practice questions</li>
+                                <li>A timetabled series of classes, so you will always know when they're running to plan your schedule.</li>
+                                <li>Chat directly with your tutor and your classmates during collaborative group discussions.</li>
+                                <li>Dedicated tutor support outside the classroom hours – including evenings and weekends – by LiveChat, email or you can request a callback.</li>
+                                <li>Improved MyKaplan with extra online content to help you study and revise outside the timetabled classes.</li>
                             </ul>
                             <p>
-                                <a href=":http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/distance-learning.aspx">
-                                    Learn more about Distance Learning
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/classroom.aspx">
+                                    Learn more about Classroom courses
                                 </a>
                             </p>
                     </div>
@@ -156,7 +148,7 @@ export default class DistanceLearningDescription extends React.Component {
                                 <strong>OnDemand</strong>  
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    This fully online course also allows you to progress and study when it suits you, but includes extensive tutor support giving you more structure and helping you keep on track. 
+                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suit you, but includes extensive tutor support giving you course structure and helping you keep on track. 
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
@@ -164,17 +156,9 @@ export default class DistanceLearningDescription extends React.Component {
                                 <strong>Live Online</strong>  
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    If you would like a little more structure, Live Online allows you to attend timetabled lectures remotely. Though you have the structure of a timetabled course, you still get the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up with recordings if you miss any lectures.
+                                    Live Online allows you to attend timetabled lectures remotely. You still have the structure of a timetabled course, but with the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up on recordings if you miss any.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
                                 </p>}                              
-                            </p>
-                            <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
-                                <strong>Classroom</strong>  
-                                {this.state.classroomShowDesc &&
-                                <p className={Styles.studyMethodSmallDesc}>
-                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to distance learning.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
-                                </p>}                                 
                             </p> 
                     </div>
                 </div>    
@@ -192,10 +176,10 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Distance Learning. 
+                        Classroom 
                     </p>
                     <p className={Styles.paragraphResultOne}>
-                        You have the ability to stay motivated even when studying on your own and you enjoy the freedom to learn when and where you want.
+                        You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
                     </p>
                     <p className={Styles.paragraphResultTwo}>
                         Does this sound like you? 
@@ -203,26 +187,26 @@ export default class DistanceLearningDescription extends React.Component {
                     <div className={Styles.tryWrapper}>
                         <button 
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx?timetable=cima-professional"
                             >
-                                   Try your free demo now!
+                                   View your local timetable now!
                         </button>
                     </div>
                 </div>
                 <div className={Styles.bottomDescription}>
                     <div className={Styles.youGet}>
                             <p>
-                                With Kaplan Distance Learning for CIMA, you get: 
+                                With Kaplan Classroom for CIMA, you get:  
                             </p>
                             <ul>
-                                <li>AAT study materials including Study Text, Exam Practice Kit and Revision Cards. </li>
-                                <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat, email and UK based students can request a callback.</li>
-                                <li>Mock exam, marked with feedback to help you prepare for the real thing.</li>
-                                <li>Online learning resources covering the full syllabus. Interactive study guides, regular knowledge checks and practice questions</li>
+                                <li>A timetabled series of classes, so you will always know when they're running to plan your schedule.</li>
+                                <li>Chat directly with your tutor and your classmates during collaborative group discussions.</li>
+                                <li>Dedicated tutor support outside the classroom hours – including evenings and weekends – by LiveChat, email or you can request a callback.</li>
+                                <li>Improved MyKaplan with extra online content to help you study and revise outside the timetabled classes.</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/Pages/distance-learning.aspx">
-                                    Learn more about Distance Learning
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/Pages/classroom.aspx">
+                                   Learn more about Classroom courses
                                 </a>
                             </p>
                     </div>
@@ -231,7 +215,7 @@ export default class DistanceLearningDescription extends React.Component {
                                 <strong>OnDemand</strong>  
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    This fully online course also allows you to progress and study when it suits you, but includes extensive tutor support giving you more structure and helping you keep on track. 
+                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suit you, but includes extensive tutor support giving you course structure and helping you keep on track. 
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
@@ -239,17 +223,9 @@ export default class DistanceLearningDescription extends React.Component {
                                 <strong>Live Online</strong>  
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    If you would like a little more structure, Live Online allows you to attend timetabled lectures remotely. Though you have the structure of a timetabled course, you still get the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up with recordings if you miss any lectures.
+                                    Live Online allows you to attend timetabled lectures remotely. You still have the structure of a timetabled course, but with the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up on recordings if you miss any.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
                                 </p>}                              
-                            </p>
-                            <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
-                                <strong>Classroom</strong>  
-                                {this.state.classroomShowDesc &&
-                                <p className={Styles.studyMethodSmallDesc}>
-                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to distance learning.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
-                                </p>}                                 
                             </p> 
                     </div>
                 </div>    
