@@ -15,6 +15,26 @@ import {
 
 var  indx = 0;
 
+class RenderDescription extends React.Component  {
+    render(){
+        const { bestStudyMethod, qualificationSelected} = this.props
+
+        const renderClassroom  = bestStudyMethod.name === 'Classroom' ? true : false
+        const renderOnDemand  = bestStudyMethod.name === 'OnDemand' ? true : false
+        const renderLiveOnline  = bestStudyMethod.name === 'Live Online' ? true : false
+        const renderDistanceLearning  = bestStudyMethod.name === 'Distance Learning' ? true : false  
+
+        return(
+            <div>
+                {renderClassroom && <ClassroomDescription qualificationSelected={qualificationSelected} /> }
+                {renderOnDemand && <OnDemandDescription qualificationSelected={qualificationSelected} /> }
+                {renderLiveOnline && <LiveOnlineDescription qualificationSelected={qualificationSelected} /> }
+                {renderDistanceLearning &&  <DistanceLearningDescription qualificationSelected={qualificationSelected}/>}
+            </div>
+        )
+    }
+}
+
 export default class ResultSlide extends React.Component {
 
     constructor(props){
@@ -50,43 +70,12 @@ export default class ResultSlide extends React.Component {
 
     const bestStudyMethod = studyMethods[indx]
 
-    const RenderDescription = (bestStudyMethod, qualificationSelected) => {
-    
-        if (qualificationSelected !== 'Other') { 
-            if (bestStudyMethod.name === 'Classroom') return ClassroomDescription(qualificationSelected)
-            if (bestStudyMethod.name === 'OnDemand') return OnDemandDescription(qualificationSelected)
-            if (bestStudyMethod.name === 'Live Online') return LiveOnlineDescription(qualificationSelected)
-            if (bestStudyMethod.name === 'Distance Learning') return DistanceLearningDescription(qualificationSelected)
-        } 
-    }
-
     return(
         <div className={Styles.slide}>
-            {qualificationSelected === 'Other' && OtherDescription()}
-            {RenderDescription(bestStudyMethod, qualificationSelected)}           
+            <RenderDescription 
+                bestStudyMethod={bestStudyMethod} 
+                qualificationSelected={qualificationSelected}
+            />       
         </div>)
     }
 }
- /*
-
-If ACCA Selected, no weighting given to OnDemand in questions and only ACCA Demos presented
-CIMA	If CIMA selected, only CIMA Demos presented 
-AAT	If AAT Selected, only AAT Demos presented
-Other/Unsure	If Unsure selected, a range of demos and more course info presented
-
-
-
-            {qualificationSelected!== 'Other' &&
-            <div>
-                <h1 className={Styles.resultTitle}>Have you considered {bestStudyMethod.name}?</h1>
-                <h3 className={Styles.resultSubtitle}>{bestStudyMethod.subtitle}</h3>
-                <p className={Styles.resultDescription}>{bestStudyMethod.description}</p>
-                <a href={bestStudyMethod.link} className={Styles.findOutMore}>Find Out More</a>
-                <h1>{prc}</h1>
-                <h4>Results:</h4>
-                <h5>classroom: {result[0]}</h5>
-                <h5>live online: {result[1]}</h5>
-                <h5>onDemand: {result[2]}</h5>
-                <h5>distance learning: {result[3]}</h5>
-            </div>}
-*/

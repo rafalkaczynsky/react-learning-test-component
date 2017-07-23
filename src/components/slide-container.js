@@ -84,7 +84,7 @@ export default class SlideContainer extends React.Component {
                     studyMethods={studyMethods} 
                     questions={questions} 
                     qualificationSelected={this.state.qualification} 
-                />}
+                />
             </div>
         )
     }
