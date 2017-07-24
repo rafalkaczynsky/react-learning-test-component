@@ -488,8 +488,9 @@ button[disabled]{
 /* -----------------------results slide ---------------------------------*/
 
 .resultsContainer{
+  position: relative;
   display: flex;
-  flex: 1;
+  flex: 0.85;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -499,6 +500,7 @@ button[disabled]{
   color: #77777a;
   text-align:center;
   padding-bottom: 50px!important;
+  
 }
 
 .topDescription{
@@ -541,13 +543,14 @@ button[disabled]{
 }
 
 .bottomDescription{
+  height: auto;
   display: flex;
-  flex: 1;
+  flex: 0.6;
   flex-direction: row;
   width: 100%;
   margin-top: 40px;
   align-items: space-between;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 
 .youEnjoy{
@@ -561,8 +564,16 @@ button[disabled]{
  margin-right: 10%;
 }
 
+.youGet > p > a {
+  color: #abd640!important;
+}
+
 .youGet > ul {
   padding-left: 15px!important;
+}
+
+.youGet > ul > li {
+  display: block;
 }
 
 .imageResult{
@@ -594,7 +605,7 @@ button[disabled]{
 .tryWrapper{
   margin-left: auto;
   margin-right: auto;
-  width: 170px;
+  width: 225px;
   height: 55px!important;
   text-align: center;
   box-sizing: border-box;
@@ -610,10 +621,28 @@ button[disabled]{
   border: 1px solid lightgrey;
   border-radius: 5px;
   cursor: pointer;
+  background-color: white; 
+}
+
+.otherChoice > p {
+  color: grey;
+}
+
+
+.otherChoice:nth-child(1), .otherChoice:nth-child(1) > p > a {
+  color: #7ec16d;
+}
+
+.otherChoice:nth-child(2), .otherChoice:nth-child(2) > p > a{
+  color: #409cd1;
+}
+
+.otherChoice:nth-child(3),.otherChoice:nth-child(3) > p > a{
+  color: #d640b5;
 }
 
 .studyMethodSmallDesc{
-
+color: #fbd7ec;
 }
 
 a {
@@ -624,4 +653,46 @@ a.unsureLink{
   margin-right: 20px;
   margin-left: 20px;
   display: block;
+}
+
+/* social media buttons */
+
+.demopadding {
+  position: absolute;
+  bottom: 5px;
+}
+.iconSocial {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+  color:#FFFFFF;
+  float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:#39408d;
+	color:white;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.iconSocial > i {
+	font-size:26px;
+	position:absolute;
+	left:9px;
+	top:7px;
+}
+
+#fb{
+  left: 11px;
+  top: 9px;
 }

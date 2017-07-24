@@ -73,7 +73,7 @@ export default class ResultSlide extends React.Component {
             <RenderDescription 
                 bestStudyMethod={bestStudyMethod} 
                 qualificationSelected={qualificationSelected}
-            />       
+            />     
         </div>)
     }
 }

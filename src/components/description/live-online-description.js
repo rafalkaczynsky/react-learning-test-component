@@ -107,7 +107,13 @@ export default class DistanceLearningDescription extends React.Component {
                             </p> 
                     </div>
                 </div>    
-            </div> 
+            </div>
+            <div className={Styles.demopadding}>
+                <div className={Styles.iconSocial}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-twitter'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-linkedin'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-instagram'></i></div>
+            </div>    
         </div>
         )}
 
@@ -183,6 +189,12 @@ export default class DistanceLearningDescription extends React.Component {
                     </div>
                 </div>    
             </div> 
+            <div className={Styles.demopadding}>
+                <div className={Styles.iconSocial}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-twitter'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-linkedin'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-instagram'></i></div>
+            </div>   
         </div>
         )}
         {qualificationSelected === 'Other' &&  (
@@ -264,7 +276,13 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                 </div>    
-            </div> 
+            </div>
+            <div className={Styles.demopadding}>
+                <div className={Styles.iconSocial}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-twitter'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-linkedin'></i></div>
+                <div className={Styles.iconSocial}><i className='fa fa-instagram'></i></div>
+            </div>    
         </div> 
         )}
     </div>
