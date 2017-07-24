@@ -40,16 +40,18 @@ export default class ResultSlide extends React.Component {
 
     }
 
+    
     render(){
-
+    
     const {answers, studyMethods, questions, qualificationSelected} = this.props
     const result = answers.reduce((prev, curr, i) => {
-
+     //   console.log(distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning))
+     //   console.log(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning)
         let final = []
-        let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).distanceLearning)
-        let onDemand = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).onDemand)
-        let liveOnline = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).liveOnline)
-        let classroom = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).classroom)
+        let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning)
+        let onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand)
+        let liveOnline = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].liveOnline)
+        let classroom = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].classroom)
          
         qualificationSelected === ' ACCA' ? onDemand = 0 : onDemand = onDemand
 
@@ -58,9 +60,12 @@ export default class ResultSlide extends React.Component {
         return final 
     }, 0);
 
-    let winner = Math.max(...result)
+    //let winner = Math.max(...result)
+
+   let winner = Math.max.apply(null, [result[0], result[1], result[2], result[3]])
     
     let prc = parseInt(parseFloat(winner/28)*100) + '%'
+
     if (result !== 0 ){
         indx = result.indexOf(winner)
     }
