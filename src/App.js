@@ -48,6 +48,8 @@ class App extends Component {
                         title={data.title}
                         introParagraphOne={data.introParagraphOne}
                         introParagraphTwo={data.introParagraphTwo}
+                        introParagraphThree={data.introParagraphThree}
+                        introParagraphFour={data.introParagraphFour}
                         questions={data.questions}     
                         studyMethods={data.studyMethods}           
                 />                

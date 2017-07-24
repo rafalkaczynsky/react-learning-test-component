@@ -108,6 +108,7 @@ html, body {
 }
 
 .introParagraphContainer > p {
+
 }
 
 .questionTitle {
@@ -231,6 +232,15 @@ html, body {
     .iconIntroContainer{
       display: block;
     }
+
+        select {
+        padding: 5px!important;
+        height:30px!important;
+        line-height:30px!important;
+        background:#f4f4f4;
+        color: grey;
+        font-size: 10px!important;
+    } 
 }
 
 @media only screen  and (max-height: 400px){
@@ -249,12 +259,16 @@ html, body {
       font-size: 2.5vh;
     }
 
+    select {
 
-    .selectLable {
-      font-size: 3.6vh!important;
-      margin: 0px;
-      display: none;
-    }
+        padding: 5px!important;
+        height:30px!important;
+        line-height:30px!important;
+        background:#f4f4f4;
+        color: grey;
+        font-size: 10px!important;
+    } 
+
 
 }
 
@@ -416,19 +430,41 @@ html, body {
 
 }
 
-.selectLable {
- color: #77777a;
- text-align: center;
- font-size: 1.6vh;
-}
 
+.selectWrapper{
+  margin: 20px;
+}
+/*
 .select {
   border: 1px solid lightgrey;
   color: grey;
   background: white;
   padding: 3px;
-  height: 20px!important;
+  line-height: 20px!important;
+ 
+}*/
+
+/* select UI Cross browsers Style*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {  /*safari and chrome*/
+    select {
+        display: block;
+        height:5v!important;
+        line-height:5vh!important;
+        background:#f4f4f4;
+        color: grey;
+        font-size: 2vh!important;
+    } 
 }
+select::-moz-focus-inner { /*Remove button padding in FF*/ 
+    border: 0!important;
+    padding: 0!important;
+}
+@-moz-document url-prefix() { /* targets Firefox only */
+    select {
+        padding: 15px 0!important;
+    }
+}
+/* ------------------ */
 
 .image {
   min-width: 130px!important;
