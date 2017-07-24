@@ -45,15 +45,19 @@ export default class ResultSlide extends React.Component {
     
     const {answers, studyMethods, questions, qualificationSelected} = this.props
     const result = answers.reduce((prev, curr, i) => {
+
      //   console.log(distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning))
      //   console.log(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning)
         let final = []
+        let onDemand = 0
+
         let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning)
-        let onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand)
         let liveOnline = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].liveOnline)
         let classroom = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].classroom)
+        if (qualificationSelected !== 'ACCA') {
+            onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand)
+        }
          
-        qualificationSelected === ' ACCA' ? onDemand = 0 : onDemand = onDemand
 
         final = [classroom, liveOnline, onDemand ,distanceLearning ] 
 

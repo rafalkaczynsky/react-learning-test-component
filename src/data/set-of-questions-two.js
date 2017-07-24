@@ -1,5 +1,10 @@
-import QuestionOneImage from '../images/question-icon-transparency.png'; // needs to be changed
-import QuestionTwoImage from '../images/question2.png'; // needs to be changed
+import QuestionOneImage from '../images/1.png'; // needs to be changed
+import QuestionTwoImage from '../images/2.png'; // needs to be changed
+import QuestionThreeImage from '../images/3.png'; // needs to be changed
+import QuestionFourImage from '../images/4.png'; // needs to be changed
+import QuestionFiveImage from '../images/5.png'; // needs to be changed
+import QuestionSixImage from '../images/6.png'; // needs to be changed
+import QuestionSevenImage from '../images/7.png'; // needs to be changed
 
 export default { 
   mainTitle: "Find Your Ideal Study Method In Just 7 Questions",
@@ -74,7 +79,7 @@ export default {
       },]
     },{
     question: 'How important is course flexibility when studying?',
-    image: QuestionTwoImage,
+    image: QuestionThreeImage,
     answers: [{
       answer: 'It is very important that studying works around my current lifestyle',
       distanceLearning: 4,
@@ -106,7 +111,7 @@ export default {
       },]
     },{
     question: 'Do you enjoy learning online? ',
-    image: QuestionTwoImage,
+    image: QuestionFourImage,
     answers: [{
       answer: 'I prefer to do almost all of my studying online',
       distanceLearning: 2,
@@ -138,7 +143,7 @@ export default {
       },]
     },{
     question: 'Do you find it easy to organise yourself and meet deadlines? ',
-    image: QuestionTwoImage,
+    image: QuestionFiveImage,
     answers: [{
       answer: 'I can easily plan ahead and dont require set deadlines to organise myself',
       distanceLearning: 4,
@@ -170,7 +175,7 @@ export default {
       },]
     },{
     question: 'Do you like to have things planned in advance? ',
-    image: QuestionTwoImage,
+    image: QuestionSixImage,
     answers: [{
       answer: 'I am happy to go with the flow and plan things on the go',
       distanceLearning: 4,
@@ -202,7 +207,7 @@ export default {
       },]
     },{
     question: 'How much support do you like to have when studying? ',
-    image: QuestionTwoImage,
+    image: QuestionSevenImage,
     answers: [{
       answer: 'I dont feel the need for regular contact and I am happy to work independently',
       distanceLearning: 4,

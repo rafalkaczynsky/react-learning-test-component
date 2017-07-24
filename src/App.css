@@ -4,7 +4,7 @@ html, body {
    overflow: hidden; 
    position: relative; 
    height: 100vh;
-   width: 100%;
+   width: 100vw;
    font-size: 16px; 
    font: normal 14px/1.5 Open Sans,sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -18,7 +18,7 @@ html, body {
 .app {
   display: block;
   height: 80%;
-  width: 90%;
+  width: 90%!important;
   margin: 10px auto;
   padding-left: 5px;
   padding-right: 5px;
@@ -26,7 +26,9 @@ html, body {
   flex-direction: column;
   text-align: center;
    font: normal 14px/1.5 Open Sans,sans-serif;
+
 }
+
 .header {
   background-color:#39408d;
   width: 100%;
@@ -51,6 +53,7 @@ html, body {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
+    align-self: stretch; 
 }
 
 .slides {
@@ -62,13 +65,15 @@ html, body {
 
 .slide {
   flex: 1 0 100px;
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 100vw!important;  
   height: 85vh;
   padding-bottom: 5vh;
+  align-items: stretch;
+  text-align: center;
 }
 
 .introContainer {
@@ -80,6 +85,7 @@ html, body {
   padding: 3% 10% 0% 10%; 
   overflow-y: scroll!important;
   height: 100vh!important;
+
 }
 
 /* questionSLides*/
@@ -90,6 +96,7 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center; 
+  
 }
 
 .introParagraphContainer{ 
@@ -97,6 +104,7 @@ html, body {
   color: #77777a;
   font-size: 23px;
   margin-top: -2vh;
+  align-self: stretch; 
 }
 
 .introParagraphContainer > p {
@@ -108,8 +116,9 @@ html, body {
   margin-top: 10px;
   line-height: 1.1;
   color: #77777a;
-  font-size: 4.5vh;
+  font-size: 4vh;
   text-align: center;
+  align-self: stretch; 
  
 }
 
@@ -144,6 +153,7 @@ html, body {
   position: relative;
   border: none;
   z-index: 100;
+  overflow: visible!important;
 }
 
 .answerCircle:active{
@@ -211,9 +221,9 @@ html, body {
 
 @media only screen and (max-width: 600px) {
     .answerText {
-      width: 20vw!important;
-      left: -7vw!important;
-      font-size: 1.8vh!important;
+      width: 20vw;
+      left: -4vw!important;
+      font-size: 1.5vh!important;
     }
     .questionContainer{
       width: 95%;
@@ -223,12 +233,12 @@ html, body {
     }
 }
 
-@media only screen  and (max-height: 500px){
+@media only screen  and (max-height: 400px){
 
     .answerText {
-      width: 14vw!important;
+      width: 14vw;
       left: -5vw!important;
-      font-size: 3vh!important;
+      font-size: 3vh;
     }
 
     .title{
@@ -249,9 +259,9 @@ html, body {
 }
 
 .questionContainer {
-  padding: 2% 2%;
+  padding: 2% 10%;
   color: #333333;
-  width: 70%; 
+  width: 80%; 
   height: 100vh;
   display: flex;
   align-items: center;
@@ -294,12 +304,11 @@ html, body {
   font-size: 2vh;
   text-align: center;
   color: #343434;
-  width: 10vw;
-  left: -4vw;
 
-  width: 18vw!important;
-  left: -5vw!important;
-  font-size: 1.5vh!important;
+
+  width: 16vw;
+  left: -7vw;
+  font-size: 1.5vh;
 }
 
 .beginButton {
@@ -658,8 +667,9 @@ a.unsureLink{
 /* social media buttons */
 
 .demopadding {
-  position: absolute;
-  bottom: 5px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 .iconSocial {
 	position:relative;

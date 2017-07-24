@@ -132,6 +132,8 @@ html, body {
 }
 /* answer Red Circle buttons */
 .answerCircle {
+  display: block;
+  overflow: visible!important;
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -289,7 +291,9 @@ html, body {
   text-align: center;
   color: #343434;
   width: 10vw;
+ 
   left: -4vw;
+  z-index: 100;
 }
 
 .beginButton {

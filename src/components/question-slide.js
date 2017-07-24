@@ -33,14 +33,12 @@ export default class QuestionSlide extends React.Component {
                         tabindex={i}
                         value={answer.answer}
                         onClick={this.handle.bind(this)}>
-                        <div 
-                            className={Styles.answerText}
-                            key={answer.answer + 'text'}
-                            style={{"z-index": i + 1}}
-                            >
-                            {answer.answer}
-        
-                        </div>
+                            <span
+                                className={Styles.answerText}
+                                key={answer.answer + 'text'}
+                                >
+                                {answer.answer}
+                            </span>
                             <span 
                             key={answer.answer + i}
                             className={Styles.whiteCircle}
