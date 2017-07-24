@@ -471,7 +471,7 @@ html, body {
 
 button:disabled,
 button[disabled]{
-  background: #00a5d9;
+
 }
 
 .counter {
@@ -574,26 +574,31 @@ button[disabled]{
 }
 
 .tryButton{
-  display: block;
   background: #abe400;
   box-sizing: border-box;
-  padding: 10px 0px;
+  padding: 10px 3px;
   border-radius: 5px;
   color: black;
   cursor: pointer;
   border: 0 none;
   cursor: pointer;
   display:inline-block;
-  line-height: 4vh;
   text-decoration: none;
   overflow: hidden;
   width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: center;
 }
 
 .tryWrapper{
   margin-left: auto;
   margin-right: auto;
   width: 170px;
+  height: 55px!important;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: center;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   padding: 5px;
@@ -609,4 +614,14 @@ button[disabled]{
 
 .studyMethodSmallDesc{
 
+}
+
+a {
+  text-decoration: none!important;
+}
+
+a.unsureLink{
+  margin-right: 20px;
+  margin-left: 20px;
+  display: block;
 }

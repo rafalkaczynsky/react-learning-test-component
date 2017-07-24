@@ -12,7 +12,6 @@ import {
     OtherDescription 
 } from './description'
 
-
 var  indx = 0;
 
 class RenderDescription extends React.Component  {
@@ -36,7 +35,6 @@ class RenderDescription extends React.Component  {
 }
 
 export default class ResultSlide extends React.Component {
-
     constructor(props){
         super(props)
 
