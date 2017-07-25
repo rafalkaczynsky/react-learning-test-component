@@ -47,8 +47,7 @@ export default class QuestionSlide extends React.Component {
                 </div>
             )
         });
-
-
+        
         const currentQuestion = index + 1;
         return(
             <div className={Styles.slide}>
@@ -73,6 +72,7 @@ export default class QuestionSlide extends React.Component {
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }

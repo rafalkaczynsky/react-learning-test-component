@@ -15,15 +15,30 @@ class App extends Component {
     this.state = {
       answers: [],
       begun: false,
+      spinnerShow: false,
     };
   }
 
   begin = () => {
     this.setState({begun: true});
+  }   
+
+  wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+    }
   }
 
   answerQuestion = (answer) => {
-    this.setState({answers: [...this.state.answers, answer]});
+    if (this.state.answers.length === 6){
+        this.setState({spinnerShow: true})
+        setTimeout(() => {
+          this.setState({answers: [...this.state.answers, answer], spinnerShow: false})
+        } , 2000)
+    }else
+      this.setState({answers: [...this.state.answers, answer]});
   }
 
   onPrevius = (answer) => {
@@ -33,8 +48,6 @@ class App extends Component {
   }
 
   render() {
-
-    console.log(this.state.answers)
     return (
         <div>
             <div className="app">
@@ -51,7 +64,8 @@ class App extends Component {
                         introParagraphThree={data.introParagraphThree}
                         introParagraphFour={data.introParagraphFour}
                         questions={data.questions}     
-                        studyMethods={data.studyMethods}           
+                        studyMethods={data.studyMethods}     
+                        spinnerShow={this.state.spinnerShow}      
                 />                
             </div>
         </div>

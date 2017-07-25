@@ -3,7 +3,7 @@ import React from 'react'
 
 import Styles from '../App.css';
 
-import {IntroSlide, QuestionSlide, ResultSlide} from './'
+import {IntroSlide, QuestionSlide, ResultSlide, Spinner} from './'
 
 import {OtherDescription} from './description'
 
@@ -28,7 +28,7 @@ export default class SlideContainer extends React.Component {
     render(){
 
         const { 
-            studyMethods,
+             studyMethods,
              questions, 
              answers, 
              begun, 
@@ -40,7 +40,8 @@ export default class SlideContainer extends React.Component {
              introParagraphOne, 
              introParagraphTwo, 
              introParagraphThree, 
-             introParagraphFour 
+             introParagraphFour,
+             spinnerShow,
             } = this.props
 
         const width = `${questions.length+2}00%`;
@@ -60,13 +61,9 @@ export default class SlideContainer extends React.Component {
         }
 
 
-        const XXX = () => {
-            return <div> Xxxxxxasxax</div>
-        }
-
         return(
             <div className={Styles.slides} style={{width, marginLeft, opacity: 1}}>
-                
+                {spinnerShow && <Spinner />}
                 <IntroSlide 
                     onBegin={onBegin} 
                     mainTitle={mainTitle}
