@@ -86,14 +86,13 @@ export default class DistanceLearningDescription extends React.Component {
                                 </p>}
                             </p>
                     </div>
-
+                    <div className={Styles.demopadding}>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
+                    </div>
                 </div>
-            </div>
-            <div className={Styles.demopadding}>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
             </div>
         </div>
         )}
@@ -160,14 +159,13 @@ export default class DistanceLearningDescription extends React.Component {
                                 </p>}
                             </p>
                     </div>
-
+                    <div className={Styles.demopadding}>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
+                    </div>
                 </div>
-            </div>
-            <div className={Styles.demopadding}>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
             </div>
         </div>
         )}
@@ -234,14 +232,13 @@ export default class DistanceLearningDescription extends React.Component {
                                 </p>}
                             </p>
                     </div>
-
+                    <div className={Styles.demopadding}>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
+                    </div>
                 </div>
-            </div>
-            <div className={Styles.demopadding}>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
             </div>
         </div>
         )}
@@ -315,14 +312,13 @@ export default class DistanceLearningDescription extends React.Component {
                                 </p>}
                             </p>
                     </div>
-
+                    <div className={Styles.demopadding}>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
+                        <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
+                    </div>
                 </div>
-            </div>
-            <div className={Styles.demopadding}>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://twitter.com/kaplanUK'}><i className='fa fa-twitter'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.linkedin.com/company/kaplan_uk'}><i className='fa fa-linkedin'></i></div>
-                <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.instagram.com/kaplaninternational/?hl=en'}><i className='fa fa-instagram'></i></div>
             </div>
         </div>
         )}

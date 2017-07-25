@@ -39,6 +39,7 @@ html, body {
 .headerLogo {
   height: 95%;
 }
+
 .title {
   color: #77777a;
   font-weight: normal;
@@ -85,10 +86,9 @@ html, body {
   padding: 3% 10% 0% 10%;
   overflow-y: scroll!important;
   height: 100vh!important;
-
 }
 
-/* questionSLides*/
+/* questionSLides */
 
 .iconIntroContainer{
   display: block;
@@ -96,7 +96,6 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .introParagraphContainer{
@@ -108,10 +107,6 @@ html, body {
   align-self: stretch;
 }
 
-.introParagraphContainer > p {
-
-}
-
 .questionTitle {
   margin-bottom: 30px;
   font-family: "Open Sans", sans-serif;
@@ -121,7 +116,6 @@ html, body {
   font-size: 4vh;
   text-align: center;
   align-self: stretch;
-
 }
 
 .answers {
@@ -133,7 +127,9 @@ html, body {
   align-items: center;
   width: 100%;
 }
+
 /* horizontal line */
+
 .answers:after {
     content:"";
     position: absolute;
@@ -182,10 +178,6 @@ html, body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08B9FF', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
     border: none;
     outline: none;
-}
-
-.answerCircle:focus  .answerText{
-
 }
 
 .whiteCircle {
@@ -531,24 +523,19 @@ button[disabled]{
 
 .resultsContainer{
   position: relative;
-  display: flex;
   box-sizing: border-box;
   width: 100vw;
-  flex: 0.85;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
   padding: 3% 10% 0% 10%;
   overflow-y: scroll!important;
   height: 100vh!important;
   color: #77777a;
-  text-align:center;
-  padding-bottom: 50px!important;
+  text-align: center!important;
+  padding-bottom: 20px!important;
 
 }
 
 .topDescription{
-  flex: 0.3!important;
   flex-direction: flex-start;
   align-items: flex-start;
   justify-content: space-between;
@@ -587,25 +574,23 @@ button[disabled]{
 }
 
 .bottomDescription{
-  height: auto;
-  display: flex;
-  flex: 0.6;
-  flex-direction: row;
   width: 100%;
   margin-top: 40px;
-  align-items: space-between;
-  justify-content: space-between;
+  text-align: center;
+
 }
 
 .youEnjoy{
   text-align: left;
-  flex: 1;
+  width: 50%;
+  float: left;
 }
 
 .youGet{
  text-align: left;
- flex: 1;
+ width: 40%;
  margin-right: 10%;
+ float:left;
 }
 
 .youGet > p > a {
@@ -648,7 +633,7 @@ button[disabled]{
 .tryWrapper{
   margin-left: auto;
   margin-right: auto;
-  width: 225px;
+  width: 253px;
   height: 55px!important;
   text-align: center;
   box-sizing: border-box;
@@ -701,10 +686,11 @@ a.unsureLink{
 /* social media buttons */
 
 .demopadding {
-
-  margin-left: auto;
-  margin-right: auto;
+  clear:both;
+  display: table;
+  margin: 30px auto;
 }
+
 .iconSocial {
 	position:relative;
 	text-align:center;
