@@ -42,7 +42,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Classroom
+                        Classroom - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
@@ -77,6 +77,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
                                 <strong>Live Online</strong>
                                 {this.state.liveOnlineShowDesc &&
@@ -107,7 +110,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Classroom
+                        Classroom - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
@@ -142,6 +145,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&
@@ -180,7 +186,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Classroom
+                        Classroom - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
@@ -215,6 +221,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&
@@ -252,7 +261,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Classroom
+                        Classroom - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
@@ -295,6 +304,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&

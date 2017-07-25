@@ -10,7 +10,7 @@ export default class QuestionSlide extends React.Component {
 
         this.state = {
             buttonDisabled: true,
-            chosenAnswer: '',
+            chosenAnswer: null,
         }
     }
 
@@ -51,7 +51,7 @@ export default class QuestionSlide extends React.Component {
         const currentQuestion = index + 1;
         return(
             <div className={Styles.slide}>
-                <div className={Styles.questionContainer}>
+                <div className={Styles.questionContainer} >
                     <div className={Styles.questionContentContainer}>
                         <p className={Styles.counter}>{currentQuestion}/{numberOfQuestions}</p>
                         <img src={question.image} className={Styles.questionImage} alt="Next" />
@@ -66,7 +66,11 @@ export default class QuestionSlide extends React.Component {
                             <button 
                                 className={Styles.beginButtonNew}
                                 disabled={this.state.buttonDisabled}
-                                onClick={() => onAnswered(this.state.chosenAnswer)}>
+                                onClick={() => {
+                                        if(this.state.chosenAnswer){
+                                            onAnswered(this.state.chosenAnswer)
+                                        }
+                                    }}>
                                     Next
                             </button>
                         </div>

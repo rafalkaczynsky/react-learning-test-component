@@ -47,7 +47,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        OnDemand
+                        OnDemand - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         OnDemand is perfect if you want all your course content online and enjoy the flexibility of studying in your own time when it suits you. Of course, you also have the reassurance of being guided through all of the printed and online resources.
@@ -84,6 +84,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>Distance Learning</strong>
                                 {this.state.onDemandShowDesc &&
@@ -130,7 +133,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        OnDemand
+                        OnDemand - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                        OnDemand is perfect if you want all your course content online and enjoy the flexibility of studying in your own time when it suits you. Of course, you also have the reassurance of being guided through all of the printed and online resources.
@@ -167,6 +170,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>Distance Learning</strong>
                                 {this.state.onDemandShowDesc &&
@@ -212,7 +218,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        OnDemand
+                        OnDemand - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         OnDemand is perfect if you want all your course content online and enjoy the flexibility of studying in your own time when it suits you. Of course, you also have the reassurance of being guided through all of the printed and online resources.
@@ -257,6 +263,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
                                 <strong>Live Online</strong>
                                 {this.state.liveOnlineShowDesc &&

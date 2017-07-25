@@ -42,7 +42,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Live Online
+                        Live Online - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You want the structure of a traditional timetabled classroom course, but with the flexibility to take the classes online from anywhere.
@@ -117,7 +117,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Live Online
+                        Live Online - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You want the structure of a traditional timetabled classroom course, but with the flexibility to take the classes online from anywhere.
@@ -198,7 +198,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Live Online
+                        Live Online - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You want the structure of a traditional timetabled classroom course, but with the flexibility to take the classes online from anywhere.
@@ -278,7 +278,7 @@ export default class DistanceLearningDescription extends React.Component {
                         You would suit...
                     </p>
                     <p className={Styles.theBestResult}>
-                        Live Online
+                        Live Online - {qualificationSelected}
                     </p>
                     <p className={Styles.paragraphResultOne}>
                         You want the structure of a traditional timetabled classroom course, but with the flexibility to take the classes online from anywhere.
@@ -321,6 +321,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&

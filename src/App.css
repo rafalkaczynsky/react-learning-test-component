@@ -505,7 +505,7 @@ select::-moz-focus-inner { /*Remove button padding in FF*/
 
 button:disabled,
 button[disabled]{
-
+  background-color: lightgray;
 }
 
 .counter {
@@ -584,6 +584,8 @@ button[disabled]{
   text-align: left;
   width: 50%;
   float: left;
+  -webkit-transition: all 4s ease-out;
+  transition: all 4s ease-out;
 }
 
 .youGet{
@@ -650,6 +652,8 @@ button[disabled]{
   border-radius: 5px;
   cursor: pointer;
   background-color: white;
+  -webkit-transition: all 4s ease-out;
+  transition: all 4s ease-out;
 }
 
 .otherChoice > p {
