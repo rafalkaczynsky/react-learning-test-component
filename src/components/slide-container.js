@@ -13,14 +13,15 @@ export default class SlideContainer extends React.Component {
         super(props);
 
         this.state = {
-            qualification: ''
+            qualification: '',
+            beginButtonDisabled: true,
         };
 
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(event) {
-        this.setState({qualification: event.target.value})
+        this.setState({qualification: event.target.value, beginButtonDisabled: false})
     }
 
 
@@ -76,6 +77,7 @@ export default class SlideContainer extends React.Component {
                     introParagraphFour={introParagraphFour}
                     qualificationSelected={this.state.qualification} 
                     onChange={this.handleChange}
+                    beginButtonDisabled={this.state.beginButtonDisabled}
 
                 /> 
                 {renderQuestions(onAnswered, questions.length)}

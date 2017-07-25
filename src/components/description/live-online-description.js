@@ -29,7 +29,7 @@ export default class DistanceLearningDescription extends React.Component {
     render(){
 
         const {qualificationSelected} = this.props
-       console.log(qualificationSelected);
+ 
      return (
     <div>
         {qualificationSelected === 'ACCA' && (

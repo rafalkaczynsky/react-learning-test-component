@@ -15,7 +15,9 @@ export default class IntroSlide extends React.Component {
             introParagraphThree,
             introParagraphFour,
             qualificationSelected, 
-            onChange
+            onChange,
+            beginButtonDisabled,
+        
         } = this.props
 
         return(
@@ -44,7 +46,7 @@ export default class IntroSlide extends React.Component {
                         </select>
                     </div>
                     <div className={Styles.beginButtonWrapper}>
-                        <button onClick={onBegin} className={Styles.beginButton}>Take the quiz!</button>
+                        <button onClick={onBegin} disabled={beginButtonDisabled} className={Styles.beginButton}>Take the quiz!</button>
                     </div>
                 </div>
             </div>
