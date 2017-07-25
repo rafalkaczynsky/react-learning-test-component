@@ -1,18 +1,18 @@
 
-html, body { 
+html, body {
    background-color: #f8f7f6;
-   overflow: hidden; 
-   position: relative; 
+   overflow: hidden;
+   position: relative;
    height: 100vh;
    width: 100vw;
-   font-size: 16px; 
+   font-size: 16px;
    font: normal 14px/1.5 Open Sans,sans-serif;
     -webkit-font-smoothing: antialiased;
    font-weight: 400;
-   -ms-text-size-adjust: 100%; 
+   -ms-text-size-adjust: 100%;
    -webkit-text-size-adjust: 100%;
    -webkit-tap-highlight-color: transparent;
-   color:#333333; 
+   color:#333333;
 }
 
 .app {
@@ -53,7 +53,7 @@ html, body {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
-    align-self: stretch; 
+    align-self: stretch;
 }
 
 .slides {
@@ -69,7 +69,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 100vw!important;  
+  width: 100vw!important;
   height: 85vh;
   padding-bottom: 5vh;
   align-items: stretch;
@@ -82,7 +82,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 10% 0% 10%; 
+  padding: 3% 10% 0% 10%;
   overflow-y: scroll!important;
   height: 100vh!important;
 
@@ -95,16 +95,17 @@ html, body {
   text-align: center;
   flex-direction: row;
   align-items: center;
-  justify-content: center; 
-  
+  justify-content: center;
+
 }
 
-.introParagraphContainer{ 
+.introParagraphContainer{
   text-align: center;
+  padding: 0 15%;
   color: #77777a;
-  font-size: 23px;
+  font-size: 18px;
   margin-top: -2vh;
-  align-self: stretch; 
+  align-self: stretch;
 }
 
 .introParagraphContainer > p {
@@ -119,8 +120,8 @@ html, body {
   color: #77777a;
   font-size: 4vh;
   text-align: center;
-  align-self: stretch; 
- 
+  align-self: stretch;
+
 }
 
 .answers {
@@ -158,8 +159,8 @@ html, body {
 }
 
 .answerCircle:active{
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     background: -moz-linear-gradient(315deg, rgba(8,185,255,1) 0%, rgba(8,185,255,1) 38%, rgba(0,0,0,1) 100%);
     background: -webkit-linear-gradient(315deg, rgba(8,185,255,1) 0%, rgba(8,185,255,1) 38%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(315deg, rgba(8,185,255,1) 0%, rgba(8,185,255,1) 38%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
@@ -171,8 +172,8 @@ html, body {
 }
 
 .answerCircle:focus{
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
     background: -moz-linear-gradient(315deg, rgba(8,185,255,1) 0%, rgba(8,185,255,1) 38%, rgba(0,0,0,1) 100%);
     background: -webkit-linear-gradient(315deg, rgba(8,185,255,1) 0%, rgba(8,185,255,1) 38%, rgba(0,0,0,1) 100%); /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(315deg, rgba(8,185,255,1) 0%, rgba(8,185,255,1) 38%, rgba(0,0,0,1) 100%); /* opera 11.10+ */
@@ -190,10 +191,10 @@ html, body {
 .whiteCircle {
   display: none;
   position: absolute;
-  left: 4px;
-  top: 4px;
-  width: 22px;
-  height: 22px;
+  left: 3px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
   border: 2px solid white;
   border-radius: 100%;
 }
@@ -240,7 +241,7 @@ html, body {
         background:#f4f4f4;
         color: grey;
         font-size: 10px!important;
-    } 
+    }
 }
 
 @media only screen  and (max-height: 400px){
@@ -267,7 +268,7 @@ html, body {
         background:#f4f4f4;
         color: grey;
         font-size: 10px!important;
-    } 
+    }
 
 
 }
@@ -275,7 +276,7 @@ html, body {
 .questionContainer {
   padding: 2% 10%;
   color: #333333;
-  width: 80%; 
+  width: 80%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -293,11 +294,11 @@ html, body {
 }
 
 .answerContainer:nth-child(2){
-  margin-right: 5%;  
+  margin-right: 5%;
 }
 
 .answerContainer:nth-child(3){
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
 .answerContainer:nth-child(4) {
@@ -314,15 +315,12 @@ html, body {
 
 .answerText {
   position: absolute;
-  top: 40px;    
+  top: 40px;
   font-size: 2vh;
   text-align: center;
   color: #343434;
-
-
   width: 16vw;
   left: -7vw;
-  font-size: 1.5vh;
 }
 
 .beginButton {
@@ -365,7 +363,7 @@ html, body {
 }
 
 .beginButtonWrapper{
- 
+
   margin: 10px;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
@@ -441,7 +439,7 @@ html, body {
   background: white;
   padding: 3px;
   line-height: 20px!important;
- 
+
 }*/
 
 /* select UI Cross browsers Style*/
@@ -453,9 +451,9 @@ html, body {
         background:#f4f4f4;
         color: grey;
         font-size: 2vh!important;
-    } 
+    }
 }
-select::-moz-focus-inner { /*Remove button padding in FF*/ 
+select::-moz-focus-inner { /*Remove button padding in FF*/
     border: 0!important;
     padding: 0!important;
 }
@@ -540,13 +538,13 @@ button[disabled]{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 3% 10% 0% 10%; 
+  padding: 3% 10% 0% 10%;
   overflow-y: scroll!important;
   height: 100vh!important;
   color: #77777a;
   text-align:center;
   padding-bottom: 50px!important;
-  
+
 }
 
 .topDescription{
@@ -564,22 +562,22 @@ button[disabled]{
 }
 
 .theBestCaption{
-  font-size: 32px;
+  font-size: 28px;
   text-align: center;
+  margin: 0;
 }
 
 .theBestResult{
   font-size: 32px;
   text-align: center;
   font-weight: bold;
+  margin:0;
 }
 
 .paragraphResultOne {
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
-  padding-right: 20px;
-  padding-left: 20px;
-
+  padding: 0 15%;
 }
 
 .paragraphResultTwo{
@@ -596,7 +594,7 @@ button[disabled]{
   width: 100%;
   margin-top: 40px;
   align-items: space-between;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .youEnjoy{
@@ -666,7 +664,7 @@ button[disabled]{
   border: 1px solid lightgrey;
   border-radius: 5px;
   cursor: pointer;
-  background-color: white; 
+  background-color: white;
 }
 
 .otherChoice > p {
@@ -716,10 +714,10 @@ a.unsureLink{
 	border-top-right-radius: 	20px;
 	border-top-left-radius: 	20px;
 	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 	20px; 
+	border-bottom-left-radius: 	20px;
 	-moz-border-radius: 		20px 20px 20px 20px;
 	-webkit-border-radius: 		20px 20px 20px 20px;
-	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	-khtml-border-radius: 		20px 20px 20px 20px;
   color:#FFFFFF;
   float:left;
 	margin:0 5px 0 0;
@@ -729,7 +727,7 @@ a.unsureLink{
 	transition: 0.5s;
 	-moz-transition: 0.5s;
 	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 	
+	-o-transition: 0.5s;
 }
 .iconSocial > i {
 	font-size:26px;

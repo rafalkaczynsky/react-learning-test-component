@@ -6,18 +6,18 @@ import QuestionFiveImage from '../images/5.png'; // needs to be changed
 import QuestionSixImage from '../images/6.png'; // needs to be changed
 import QuestionSevenImage from '../images/7.png'; // needs to be changed
 
-export default { 
+export default {
   mainTitle: "Find Your Ideal Study Method In Just 7 Questions",
-  introParagraphOne: "You've decided on your qualification and you're excited to get started. But there is one more question for you to answer - and it may be the most important. How should you study? Your unique learning style can make all the difference to your exam success. Pick the wrong study method and you may face a tough journey, even if you are well suited to the subject. ",
-  introParagraphTwo: "Luckily, there are lots of study options available that will suit your specific strengths and needs.",
-  introParagraphThree: "Answer these 7 questions to find the right study method for you and then dive in for free with an in-depth demo. ",
-  introParagraphFour: " Now find your perfect fit and sail through those exams!",
+  introParagraphOne: "Your unique learning style can make all the difference to your exam success. Pick the wrong study method and you may face a tough journey, even if you are well suited to the subject. ",
+  introParagraphTwo: "",
+  introParagraphThree: " ",
+  introParagraphFour: "Answer these 7 questions to find the right study method for you and then dive in for free with an in-depth demo.",
   title: "...",
   questions: [{
     question: 'Do you prefer to work in a team or on your own?',
     image: QuestionOneImage,
     answers: [{
-      answer: 'I much prefer to work on my own', 
+      answer: 'I much prefer to work on my own',
       distanceLearning: 4,
       onDemand: 3,
       liveOnline: 2,
@@ -93,7 +93,7 @@ export default {
       onDemand: 4,
       liveOnline: 1,
       classroom: 2,
-        //Distance Learning = 3 OnDemand = 4 Live Online=1 Classroom = 2    
+        //Distance Learning = 3 OnDemand = 4 Live Online=1 Classroom = 2
       }, {
       answer: 'I should be able to fit current priorities around my studies , as long as it doesnt take up too much of my time',
       distanceLearning: 2,
@@ -125,7 +125,7 @@ export default {
       onDemand: 3,
       liveOnline: 4,
       classroom: 1,
-        //Distance Learning = 2 OnDemand = 3 Live Online=4 Classroom = 1  
+        //Distance Learning = 2 OnDemand = 3 Live Online=4 Classroom = 1
       }, {
       answer: 'I quite enjoy having some online content available, but it is not essential',
       distanceLearning: 4,
@@ -157,7 +157,7 @@ export default {
       onDemand: 4,
       liveOnline: 1,
       classroom: 2,
-        //Distance Learning = 3 OnDemand = 4 Live Online=1 Classroom = 2  
+        //Distance Learning = 3 OnDemand = 4 Live Online=1 Classroom = 2
       }, {
       answer: 'I find it easier to organise myself when I have key dates planned in advance',
       distanceLearning: 2,
