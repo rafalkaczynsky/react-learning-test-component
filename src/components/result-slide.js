@@ -1,20 +1,18 @@
-
 import React from 'react'
 
 import Styles from '../App.css';
-import ResultImage from '../images/book-icon-trans.png';
 
 import {
     ClassroomDescription, 
     DistanceLearningDescription, 
     LiveOnlineDescription, 
     OnDemandDescription, 
-    OtherDescription 
 } from './description'
 
 var  indx = 0;
 
 class RenderDescription extends React.Component  {
+
     render(){
         const { bestStudyMethod, qualificationSelected} = this.props
 
@@ -35,10 +33,6 @@ class RenderDescription extends React.Component  {
 }
 
 export default class ResultSlide extends React.Component {
-    constructor(props){
-        super(props)
-
-    }
 
     render(){
     
@@ -48,11 +42,11 @@ export default class ResultSlide extends React.Component {
         let final = []
         let onDemand = 0
 
-        let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning)
-        let liveOnline = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].liveOnline)
-        let classroom = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].classroom)
+        let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning);
+        let liveOnline = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].liveOnline);
+        let classroom = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].classroom);
         if (qualificationSelected !== 'ACCA') {
-            onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand)
+            onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand);
         }
          
 
@@ -63,7 +57,6 @@ export default class ResultSlide extends React.Component {
 
    let winner = Math.max.apply(null, [result[0], result[1], result[2], result[3]])
     
-    let prc = parseInt(parseFloat(winner/28)*100) + '%'
 
     if (result !== 0 ){
         indx = result.indexOf(winner)

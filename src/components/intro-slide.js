@@ -8,13 +8,11 @@ export default class IntroSlide extends React.Component {
 
         const {
             onBegin, 
-            title, 
             mainTitle, 
             introParagraphOne, 
             introParagraphTwo, 
             introParagraphThree,
             introParagraphFour,
-            qualificationSelected, 
             onChange,
             beginButtonDisabled,
         
@@ -37,8 +35,8 @@ export default class IntroSlide extends React.Component {
                         <p className={Styles.forthParagraph}>{introParagraphFour}</p>
                     </div>
                     <div className={Styles.selectWrapper}>
-                        <select onChange={onChange}>
-                            <option disabled selected >Choose the qualification you are interested in:</option>
+                        <select defaultValue='default' onChange={onChange}>
+                            <option disabled value='default'>Choose the qualification you are interested in:</option>
                             <option value="ACCA" >ACCA</option>
                             <option value="CIMA" >CIMA</option>
                             <option value="AAT" >AAT</option>  

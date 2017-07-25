@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Styles from '../App.css';
-import IntroImage from '../images';
 
 export default class QuestionSlide extends React.Component {
 
@@ -30,15 +29,14 @@ export default class QuestionSlide extends React.Component {
     }
 
     render(){
-        console.log('2bf' + this.state.buttonFocused)
-        const {question, onAnswered, onPrevius, numberOfQuestions, index} = this.props
+        const {question, onAnswered, numberOfQuestions, index} = this.props
         const answersButton = question.answers.map((answer, i) => {
             return (
-                <div className={Styles.answerContainer}>
+                <div className={Styles.answerContainer} key={answer.answer}>
                     <button 
                         className={Styles.answerCircle}
-                        key={answer.answer}
-                        tabindex={i}
+
+                        tabIndex={i}
                         value={answer.answer}
                         onClick={this.handle.bind(this)}>
                             <span

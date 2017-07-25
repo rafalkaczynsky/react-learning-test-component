@@ -5,8 +5,6 @@ import Styles from '../App.css';
 
 import {IntroSlide, QuestionSlide, ResultSlide, Spinner} from './'
 
-import {OtherDescription} from './description'
-
 export default class SlideContainer extends React.Component {
 
     constructor(props) {

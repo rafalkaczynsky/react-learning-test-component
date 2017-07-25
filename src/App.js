@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-
-import ResultImage from './images/book-icon-trans.png';
-
 import {SlideContainer, Header} from './components'
-import Styles from './App.css';
 import {default as data} from './data/set-of-questions-two'
 
 class App extends Component {
