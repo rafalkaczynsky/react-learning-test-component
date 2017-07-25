@@ -11,18 +11,26 @@ export default class QuestionSlide extends React.Component {
         this.state = {
             buttonDisabled: true,
             chosenAnswer: null,
+            buttonFocused: false,
         }
     }
 
     handle(e){
         e.target.focus();
-
         let answer = e.target.value
-        this.setState({chosenAnswer: answer, buttonDisabled: false})
-        console.log(this.state.chosenAnswer)
+        this.setState({chosenAnswer: answer, buttonDisabled: false, buttonFocused: true})
+    }
+
+    handleContainerClick(e){
+        if (e.target.value) {
+             this.setState({buttonFocused: true, buttonDisabled: false,})
+        } else {
+            this.setState({buttonFocused: false, buttonDisabled: true,})
+        }
     }
 
     render(){
+        console.log('2bf' + this.state.buttonFocused)
         const {question, onAnswered, onPrevius, numberOfQuestions, index} = this.props
         const answersButton = question.answers.map((answer, i) => {
             return (
@@ -51,7 +59,8 @@ export default class QuestionSlide extends React.Component {
         const currentQuestion = index + 1;
         return(
             <div className={Styles.slide}>
-                <div className={Styles.questionContainer} >
+                <div className={Styles.questionContainer} onClick={this.handleContainerClick.bind(this)}>
+   
                     <div className={Styles.questionContentContainer}>
                         <p className={Styles.counter}>{currentQuestion}/{numberOfQuestions}</p>
                         <img src={question.image} className={Styles.questionImage} alt="Next" />
@@ -67,7 +76,7 @@ export default class QuestionSlide extends React.Component {
                                 className={Styles.beginButtonNew}
                                 disabled={this.state.buttonDisabled}
                                 onClick={() => {
-                                        if(this.state.chosenAnswer){
+                                        if(this.state.chosenAnswer && this.state.buttonFocused){
                                             onAnswered(this.state.chosenAnswer)
                                         }
                                     }}>
