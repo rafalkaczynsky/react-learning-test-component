@@ -152,6 +152,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&
@@ -233,6 +236,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&

@@ -211,12 +211,12 @@ export default class DistanceLearningDescription extends React.Component {
                         Does this sound like you?
                     </p>
                     <div className={Styles.tryWrapper}>
-                        <button
+                        <a
                             className={Styles.tryButton}
                             href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx"
                             >
                                    Try your free demo now!
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className={Styles.bottomDescription}>

@@ -95,7 +95,7 @@ export default {
       classroom: 2,
         //Distance Learning = 3 OnDemand = 4 Live Online=1 Classroom = 2
       }, {
-      answer: 'I should be able to fit current priorities around my studies , as long as it doesnt take up too much of my time',
+      answer: 'I should be able to fit current priorities around my studies, as long as it doesnt take up too much of my time',
       distanceLearning: 2,
       onDemand: 1,
       liveOnline: 4,

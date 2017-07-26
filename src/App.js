@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import ReactGA from 'react-ga';
 
 import './App.css';
 import {SlideContainer, Header} from './components'
 import {default as data} from './data/set-of-questions-two'
+
+ReactGA.initialize('UA-103223070-1');
 
 class App extends Component {
   constructor(props) {
@@ -17,15 +20,11 @@ class App extends Component {
 
   begin = () => {
     this.setState({begun: true});
+    ReactGA.event({
+        category: 'Quiz',
+        action: 'Clicked Link',
+    });
   }   
-
-  wait(ms){
-    var start = new Date().getTime();
-    var end = start;
-    while(end < start + ms) {
-      end = new Date().getTime();
-    }
-  }
 
   answerQuestion = (answer) => {
     if (this.state.answers.length === 6){
