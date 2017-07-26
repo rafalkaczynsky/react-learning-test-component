@@ -5,7 +5,14 @@ import './App.css';
 import {SlideContainer, Header} from './components'
 import {default as data} from './data/set-of-questions-two'
 
-ReactGA.initialize('UA-103223070-1');
+ReactGA.initialize('UA-103223070-1',{
+  debug: true,
+  titleCase: false,
+});
+var ga = ReactGA.ga();
+
+//ga('send', 'pageview');
+ga('send', 'event', 'eventCategory', 'eventAction');
 
 class App extends Component {
   constructor(props) {
