@@ -14,21 +14,33 @@ export default class QuestionSlide extends React.Component {
         }
     }
 
-    handle(e){
-        e.target.focus();
-        let answer = e.target.value
-        this.setState({chosenAnswer: answer, buttonDisabled: false, buttonFocused: true})
-    }
+    handleClick(e){
+        let nodeClicked = e.target.nodeName
+        let parentNodeName = e.target.parentNode.nodeName
+        let answer = null
 
-    handleContainerClick(e){
-        if (e.target.value) {
-             this.setState({buttonFocused: true, buttonDisabled: false,})
+        if  ((nodeClicked === 'BUTTON') || (nodeClicked === 'SPAN')) {
+            if (parentNodeName === 'BUTTON') {
+                answer = e.target.parentNode.value
+            } else {
+                e.target.focus();
+                answer = e.target.value
+            }
+            this.setState({chosenAnswer: answer, buttonDisabled: false, buttonFocused: true,})
+            if (answer){
+                console.log('Chosen answer: ' + answer)
+            } else {
+                console.log('No answer chosen yet ...Please select answer!')
+            }
         } else {
-            this.setState({buttonFocused: false, buttonDisabled: true,})
+            this.setState({chosenAnswer: null, buttonDisabled: true, buttonFocused: false})
+            console.log('Answer disselected. Please select answer!')
         }
+               
     }
 
     render(){
+
         const {question, onAnswered, numberOfQuestions, index} = this.props
         const answersButton = question.answers.map((answer, i) => {
             return (
@@ -37,8 +49,7 @@ export default class QuestionSlide extends React.Component {
                         className={Styles.answerCircle}
 
                         tabIndex={i}
-                        value={answer.answer}
-                        onClick={this.handle.bind(this)}>
+                        value={answer.answer}>
                             <span
                                 className={Styles.answerText}
                                 key={answer.answer + 'text'}
@@ -47,6 +58,7 @@ export default class QuestionSlide extends React.Component {
                             </span>
                             <span 
                             key={answer.answer + i}
+                            
                             className={Styles.whiteCircle}
                             ></span>
                      </button>
@@ -57,7 +69,7 @@ export default class QuestionSlide extends React.Component {
         const currentQuestion = index + 1;
         return(
             <div className={Styles.slide}>
-                <div className={Styles.questionContainer} onClick={this.handleContainerClick.bind(this)}>
+                <div className={Styles.questionContainer} onClick={this.handleClick.bind(this)}>
    
                     <div className={Styles.questionContentContainer}>
                         <p className={Styles.counter}>{currentQuestion}/{numberOfQuestions}</p>
