@@ -189,6 +189,7 @@ html, body {
   height: 20px;
   border: 2px solid white;
   border-radius: 100%;
+  z-index: 1001;
 }
 
 .answerCircle:focus .whiteCircle{
@@ -322,9 +323,10 @@ html, body {
 
 .answerText {
   position: absolute;
-  top: 40px;
+  top: 0;
   font-size: 2vh;
   text-align: center;
+  padding-top: 40px;
   color: #343434;
   width: 16vw;
   left: -7vw;

@@ -18,15 +18,20 @@ export default class QuestionSlide extends React.Component {
         let nodeClicked = e.target.nodeName
         let parentNodeName = e.target.parentNode.nodeName
         let answer = null
-
+        e.preventDefault();
         if  ((nodeClicked === 'BUTTON') || (nodeClicked === 'SPAN')) {
+
             if (parentNodeName === 'BUTTON') {
                 answer = e.target.parentNode.value
+                e.target.parentNode.blur()
+                e.target.parentNode.focus()
             } else {
-                e.target.focus();
+                e.target.focus()
                 answer = e.target.value
-            }
-            this.setState({chosenAnswer: answer, buttonDisabled: false, buttonFocused: true,})
+            } 
+            
+ 
+            this.setState({chosenAnswer: answer, buttonDisabled: false, buttonFocused: true, })
             if (answer){
                 console.log('Chosen answer: ' + answer)
             } else {
@@ -40,25 +45,27 @@ export default class QuestionSlide extends React.Component {
     }
 
     render(){
-
         const {question, onAnswered, numberOfQuestions, index} = this.props
         const answersButton = question.answers.map((answer, i) => {
             return (
                 <div className={Styles.answerContainer} key={answer.answer}>
                     <button 
+                        type="button"
                         className={Styles.answerCircle}
-
-                        tabIndex={i}
-                        value={answer.answer}>
+                        value={answer.answer}
+                        onClick={(e)=> e.target.focus()}
+                        >
+                       
                             <span
                                 className={Styles.answerText}
                                 key={answer.answer + 'text'}
+                        
                                 >
                                 {answer.answer}
                             </span>
                             <span 
                             key={answer.answer + i}
-                            
+                    
                             className={Styles.whiteCircle}
                             ></span>
                      </button>
@@ -83,6 +90,7 @@ export default class QuestionSlide extends React.Component {
                     <div className={Styles.prevNextButtonWrapper}>
                         <div className={Styles.beginButtonWrapper}>
                             <button 
+                                
                                 className={Styles.beginButtonNew}
                                 disabled={this.state.buttonDisabled}
                                 onClick={() => {
