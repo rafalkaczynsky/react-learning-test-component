@@ -152,7 +152,7 @@ export default class ClassroomDescription extends React.Component {
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suit you, but includes extensive tutor support giving you course structure and helping you keep on track.
+                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suits you, but includes extensive tutor support giving you course structure and helping you keep on track.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
@@ -228,7 +228,7 @@ export default class ClassroomDescription extends React.Component {
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suit you, but includes extensive tutor support giving you course structure and helping you keep on track.
+                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suits you, but includes extensive tutor support giving you course structure and helping you keep on track.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
@@ -267,7 +267,7 @@ export default class ClassroomDescription extends React.Component {
                         You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
                     </p>
                     <p className={Styles.paragraphResultOne}>
-                        Unsure which accountancy qualification is right for you? learn more about each course via the links below:
+                        Unsure which accountancy qualification is right for you? Learn more about each course via the links below:
                         <div>
                             <a className="paragraphResultTwo" style={{"padding":"12px","font-weight": "bold", "font-size": "20px", "color": "grey", "display": "inline-block" }} href="https://kaplan.co.uk/courses/why-study/aat">Why Study AAT?</a>
                             <a className="paragraphResultTwo" style={{"padding":"12px","font-weight": "bold", "font-size": "20px", "color": "grey", "display": "inline-block"}} href="https://kaplan.co.uk/courses/why-study/cima">Why Study CIMA?</a>
@@ -311,7 +311,7 @@ export default class ClassroomDescription extends React.Component {
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suit you, but includes extensive tutor support giving you course structure and helping you keep on track.
+                                    If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suits you, but includes extensive tutor support giving you course structure and helping you keep on track.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>

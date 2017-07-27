@@ -71,9 +71,9 @@ export default class OnDemandDescription extends React.Component {
                             </p>
                             <ul>
                                 <li>Online resources include tutor-led videos, practice questions, study materials and an integrated workbook. Printed study materials also included. </li>
-                                <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat, email and UK based students can request a callback</li>
-                                <li>Guided by a learning coach so you know exactly what you need to complete and when. Designed to cover the whole syllabus</li>
-                                <li>365 start dates a year so you can start studying anytime, matching the flexibility of the on demand exams</li>
+                                <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat, email and UK based students can request a callback.</li>
+                                <li>Guided by a learning coach so you know exactly what you need to complete and when. Designed to cover the whole syllabus.</li>
+                                <li>365 start dates a year so you can start studying anytime, matching the flexibility of the on demand exams.</li>
                                 <li>Over 600 practice questions including mock exams that look like the real exams with personalised feedback.</li>
                                 <li>Immediate feedback when you complete a practice test or mock exam so you know the areas to improve on.</li>
                             </ul>
@@ -107,7 +107,7 @@ export default class OnDemandDescription extends React.Component {
                                 <strong>Classroom</strong>
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to distance learning.
+                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to OnDemand.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
                                 </p>}
                             </p>
@@ -157,9 +157,9 @@ export default class OnDemandDescription extends React.Component {
                             </p>
                             <ul>
                                 <li>Online resources include tutor-led videos, practice questions, study materials and an integrated workbook. Printed study materials also included. </li>
-                                <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat, email and UK based students can request a callback</li>
-                                <li>Guided by a learning coach so you know exactly what you need to complete and when. Designed to cover the whole syllabus</li>
-                                <li>365 start dates a year so you can start studying anytime, matching the flexibility of the on demand exams</li>
+                                <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat, email and UK based students can request a callback.</li>
+                                <li>Guided by a learning coach so you know exactly what you need to complete and when. Designed to cover the whole syllabus.</li>
+                                <li>365 start dates a year so you can start studying anytime, matching the flexibility of the on demand exams.</li>
                                 <li>Over 600 practice questions including mock exams that look like the real exams with personalised feedback.</li>
                                 <li>Immediate feedback when you complete a practice test or mock exam so you know the areas to improve on.</li>
                             </ul>
@@ -193,7 +193,7 @@ export default class OnDemandDescription extends React.Component {
                                 <strong>Classroom</strong>
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
-                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to distance learning.
+                                    A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to OnDemand.
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
                                 </p>}
                             </p>
@@ -224,7 +224,7 @@ export default class OnDemandDescription extends React.Component {
                         OnDemand is perfect if you want all your course content online and enjoy the flexibility of studying in your own time when it suits you. Of course, you also have the reassurance of being guided through all of the printed and online resources.
                     </p>
                     <p className={Styles.paragraphResultOne}>
-                        Unsure which accountancy qualification is right for you? learn more about each course via the links below:
+                        Unsure which accountancy qualification is right for you? Learn more about each course via the links below:
                         <div>
                             <a className="paragraphResultTwo" style={{"padding":"12px","font-weight": "bold", "font-size": "20px", "color": "grey", "display": "inline-block" }} href="https://kaplan.co.uk/courses/why-study/aat">Why Study AAT?</a>
                             <a className="paragraphResultTwo" style={{"padding":"12px","font-weight": "bold","font-size": "20px", "color": "grey", "display": "inline-block"}} href="https://kaplan.co.uk/courses/why-study/cima">Why Study CIMA?</a>
@@ -232,7 +232,7 @@ export default class OnDemandDescription extends React.Component {
                         </div>
                     </p>
                     <p className={Styles.paragraphResultTwo}>
-                        If you are new to accountancy, AAT may be the right choice for you. Try our free AAT
+                        If you are new to accountancy, AAT may be the right choice for you.
                     </p>
                     <div className={Styles.tryWrapper}>
                         <a  style={{"font-size":"10px"}}
@@ -274,7 +274,7 @@ export default class OnDemandDescription extends React.Component {
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx">Get your free demo</a>
                                 </p>}
                             </p>
-                            <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
+                            <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>Classroom</strong>
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
@@ -282,7 +282,7 @@ export default class OnDemandDescription extends React.Component {
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
                                 </p>}
                             </p>
-                            <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
+                            <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
                                 <strong>Distance Learning</strong>
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>

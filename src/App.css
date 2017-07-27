@@ -323,10 +323,9 @@ html, body {
 
 .answerText {
   position: absolute;
-  top: 0;
+  top: 40px;
   font-size: 2vh;
   text-align: center;
-  padding-top: 40px;
   color: #343434;
   width: 16vw;
   left: -7vw;
@@ -676,16 +675,15 @@ button[disabled]{
   color: grey;
 }
 
-
 .otherChoice:nth-child(1), .otherChoice:nth-child(1) > p > a {
   color: #7ec16d;
 }
 
-.otherChoice:nth-child(2), .otherChoice:nth-child(2) > p > a{
+.otherChoice:nth-child(2), .otherChoice:nth-child(2) > p > a {
   color: #409cd1;
 }
 
-.otherChoice:nth-child(3),.otherChoice:nth-child(3) > p > a{
+.otherChoice:nth-child(3), .otherChoice:nth-child(3) > p > a {
   color: #d640b5;
 }
 
