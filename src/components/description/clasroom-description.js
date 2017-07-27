@@ -3,7 +3,7 @@ import Styles from '../../App.css';
 
 import ResultImage from '../../images/book-icon-trans.png';
 
-export default class DistanceLearningDescription extends React.Component {
+export default class ClassroomDescription extends React.Component {
     constructor(props){
         super()
 

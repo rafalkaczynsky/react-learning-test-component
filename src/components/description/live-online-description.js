@@ -3,7 +3,7 @@ import Styles from '../../App.css';
 
 import ResultImage from '../../images/book-icon-trans.png';
 
-export default class DistanceLearningDescription extends React.Component {
+export default class LiveOnlineDescription extends React.Component {
     constructor(props){
         super()
 
@@ -62,7 +62,7 @@ export default class DistanceLearningDescription extends React.Component {
                 <div className={Styles.bottomDescription}>
                     <div className={Styles.youGet}>
                             <p>
-                                With Kaplan Live Online for AAT, you get:
+                                With Kaplan Live Online for ACCA, you get:
                             </p>
                             <ul>
                                 <li>A timetabled series of classes, so you will always know when they're running to plan your schedule.</li>
@@ -77,7 +77,9 @@ export default class DistanceLearningDescription extends React.Component {
                             </p>
                     </div>
                     <div className={Styles.youEnjoy}>
-
+                            <p>
+                                You may also enjoy:
+                            </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
                                 <strong>Classroom</strong>
                                 {this.state.liveOnlineShowDesc &&

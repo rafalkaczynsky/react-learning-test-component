@@ -3,7 +3,7 @@ import Styles from '../../App.css';
 
 import ResultImage from '../../images/book-icon-trans.png';
 
-export default class DistanceLearningDescription extends React.Component {
+export default class OnDemandDescription extends React.Component {
     constructor(props){
         super()
 
@@ -194,7 +194,7 @@ export default class DistanceLearningDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to distance learning.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/acca-timetables.aspx">View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
                                 </p>}
                             </p>
                     </div>

@@ -181,7 +181,7 @@ html, body {
 }
 
 .whiteCircle {
-  display: none;
+  background: rgba(0,0,0,0);
   position: absolute;
   left: 3px;
   top: 3px;
@@ -330,6 +330,7 @@ html, body {
   color: #343434;
   width: 16vw;
   left: -7vw;
+  z-index: 1000!important;
 }
 
 .beginButton {

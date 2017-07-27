@@ -65,7 +65,6 @@ export default class QuestionSlide extends React.Component {
                             </span>
                             <span 
                             key={answer.answer + i}
-                    
                             className={Styles.whiteCircle}
                             ></span>
                      </button>
