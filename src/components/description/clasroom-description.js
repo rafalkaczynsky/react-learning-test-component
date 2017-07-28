@@ -153,7 +153,7 @@ export default class ClassroomDescription extends React.Component {
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like a little more flexibility, you can study when it suits you with OnDemand. This online course allows you to progress when it suits you, but includes extensive tutor support giving you course structure and helping you keep on track.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/AAT/Pages/free-ondemand-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
@@ -161,7 +161,7 @@ export default class ClassroomDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     Live Online allows you to attend timetabled lectures remotely. You still have the structure of a timetabled course, but with the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up on recordings if you miss any.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/AAT/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
                     </div>
