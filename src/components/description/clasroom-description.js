@@ -88,6 +88,14 @@ export default class ClassroomDescription extends React.Component {
                                     <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-ACCA-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
+                            <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
+                                <strong>Distance Learning</strong>
+                                {this.state.classroomShowDesc &&
+                                <p className={Styles.studyMethodSmallDesc}>
+                                    If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-ACCA-DEMO"> Get your free demo</a>
+                                </p>}
+                            </p>
                     </div>
                     <div className={Styles.demopadding}>
                         <div className={Styles.iconSocial} onClick={() => window.location.href='https://www.facebook.com/KaplanFinancialUK/'}><i id={Styles.fb} className='fa fa-facebook'></i></div>

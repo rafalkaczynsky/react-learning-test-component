@@ -28,7 +28,6 @@ class App extends Component {
 
   begin = () => {
     this.setState({begun: true});
-
     /*
     ReactGA.event({
         category: 'Quiz',
