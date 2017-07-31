@@ -55,7 +55,6 @@ export default class QuestionSlide extends React.Component {
                         value={answer.answer}
                         onClick={(e)=> e.target.focus()}
                         >
-                       
                             <span
                                 className={Styles.answerText}
                                 key={answer.answer + 'text'}
@@ -76,7 +75,6 @@ export default class QuestionSlide extends React.Component {
         return(
             <div className={Styles.slide}>
                 <div className={Styles.questionContainer} onClick={this.handleClick.bind(this)}>
-   
                     <div className={Styles.questionContentContainer}>
                         <p className={Styles.counter}>{currentQuestion}/{numberOfQuestions}</p>
                         <img src={question.image} className={Styles.questionImage} alt="Next" />

@@ -22,7 +22,6 @@ export default class SlideContainer extends React.Component {
         this.setState({qualification: event.target.value, beginButtonDisabled: false})
     }
 
-
     render(){
 
         const { 
@@ -58,7 +57,6 @@ export default class SlideContainer extends React.Component {
             });
         }
 
-
         return(
             <div className={Styles.slides} style={{width, marginLeft, opacity: 1}}>
                 {spinnerShow && <Spinner />}
@@ -86,9 +84,3 @@ export default class SlideContainer extends React.Component {
         )
     }
 }
-
-
-// Choose the qualification you are interested in: 
-// ACCA
-// CIMA
-// AAT 

@@ -49,7 +49,6 @@ export default class ResultSlide extends React.Component {
             onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand);
         }
          
-
         final = [classroom, liveOnline, onDemand ,distanceLearning ] 
 
         return final 
@@ -57,7 +56,6 @@ export default class ResultSlide extends React.Component {
 
    let winner = Math.max.apply(null, [result[0], result[1], result[2], result[3]])
     
-
     if (result !== 0 ){
         indx = result.indexOf(winner)
     }
