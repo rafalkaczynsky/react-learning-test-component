@@ -148,6 +148,14 @@ export default class ClassroomDescription extends React.Component {
                             <p>
                                 You may also enjoy:
                             </p>
+                            <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
+                                <strong>Distance Learning</strong>
+                                {this.state.classroomShowDesc &&
+                                <p className={Styles.studyMethodSmallDesc}>
+                                   This course also allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-distance-learning-demo-signup.aspx"> Get your free demo</a>
+                                </p>}
+                            </p>
                             <p onClick={this.handleOnDemand.bind(this)} className={Styles.otherChoice}>
                                 <strong>OnDemand</strong>
                                 {this.state.onDemandShowDesc &&

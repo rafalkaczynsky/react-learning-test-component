@@ -178,7 +178,7 @@ export default class OnDemandDescription extends React.Component {
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                    This course also allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="https://kaplanprofessional.wufoo.eu/build/register-for-a-free-demo-of-cima-distance-learning/"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
@@ -194,7 +194,7 @@ export default class OnDemandDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     A traditional scheduled programme with face to face tutor led classes, classroom learning offers a very different experience to OnDemand.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx"> View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx"> View your local timetable</a>
                                 </p>}
                             </p>
                     </div>

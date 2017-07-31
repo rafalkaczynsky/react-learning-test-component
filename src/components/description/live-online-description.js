@@ -93,7 +93,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="https://kaplanprofessional.wufoo.eu/build/register-for-a-free-demo-of-acca-distance-learning/"> Get your free demo</a>
                                 </p>}
                             </p>
                     </div>
@@ -255,7 +255,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href=" http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="https://kaplanprofessional.wufoo.eu/build/register-for-a-free-demo-of-cima-distance-learning/"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
@@ -263,7 +263,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                      If you enjoy structured learning, Classroom may also be ideal for you.  A traditional scheduled programme with face to face tutor led classes, your tutor will guide you and your classmates through the course and help build your confidence ready for sitting your exams.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx">View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx"> View your local timetable</a>
                                 </p>}
                             </p>
                     </div>
