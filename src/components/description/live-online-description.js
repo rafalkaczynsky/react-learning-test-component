@@ -53,7 +53,7 @@ export default class LiveOnlineDescription extends React.Component {
                     <div className={Styles.tryWrapper}>
                         <a
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-live-online-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-ACCA-DEMO"
                             >
                                    Try your free demo now!
                         </a>
@@ -71,7 +71,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat or email. UK based students can request a callback.</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/live-online.aspx">
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/ACCA/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-ACCA-LEARN">
                                     Learn more about Live Online
                                 </a>
                             </p>
@@ -85,7 +85,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you enjoy structured learning, Classroom may also be ideal for you.  A traditional scheduled programme with face to face tutor led classes, your tutor will guide you and your classmates through the course and help build your confidence ready for sitting your exams.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx"> View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-ACCA-TIMETABLE"> View your local timetable</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
@@ -93,7 +93,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="https://kaplanprofessional.wufoo.eu/build/register-for-a-free-demo-of-acca-distance-learning/"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-ACCA-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                     </div>
@@ -131,7 +131,7 @@ export default class LiveOnlineDescription extends React.Component {
                     <div className={Styles.tryWrapper}>
                         <a
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-live-online-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-AAT-DEMO"
                             >
                                    Try your free demo now!
                         </a>
@@ -149,7 +149,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat or email. UK based students can request a callback.</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/live-online.aspx">
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-AAT-LEARN">
                                     Learn more about Live Online
                                 </a>
                             </p>
@@ -163,7 +163,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     This fully online course allows you to progress and study when it suits you, but includes extensive tutor support and guidance giving you structure and helping you keep on track.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/AAT/Pages/free-ondemand-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/AAT/Pages/free-ondemand-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-AAT-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
@@ -171,7 +171,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you enjoy structured learning, Classroom may also be ideal for you.  A traditional scheduled programme with face to face tutor led classes, your tutor will guide you and your classmates through the course and help build your confidence ready for sitting your exams.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx"> View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-AAT-TIMETABLE"> View your local timetable</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
@@ -179,7 +179,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-distance-learning-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-AAT-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                     </div>
@@ -215,7 +215,7 @@ export default class LiveOnlineDescription extends React.Component {
                     <div className={Styles.tryWrapper}>
                         <a
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-CIMA-DEMO"
                             >
                                    Try your free demo now!
                         </a>
@@ -233,7 +233,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat or email. UK based students can request a callback</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/Pages/live-online.aspx">
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-CIMA-LEARN">
                                     Learn more about Live Online
                                 </a>
                             </p>
@@ -247,7 +247,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     This fully online course allows you to progress and study when it suits you, but includes extensive tutor support and guidance giving you structure and helping you keep on track.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-CIMA-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
@@ -255,7 +255,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-AAT-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
@@ -263,7 +263,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                      If you enjoy structured learning, Classroom may also be ideal for you.  A traditional scheduled programme with face to face tutor led classes, your tutor will guide you and your classmates through the course and help build your confidence ready for sitting your exams.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx"> View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-AAT-TIMETABLE"> View your local timetable</a>
                                 </p>}
                             </p>
                     </div>
@@ -306,7 +306,7 @@ export default class LiveOnlineDescription extends React.Component {
                     <div className={Styles.tryWrapper}>
                         <a  style={{"font-size":"10px"}}
                             className={Styles.tryButton}
-                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-live-online-demo-signup.aspx"
+                            href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-AAT-DEMO"
                             >
                                    Try our free AAT Live Online demo now
                         </a>
@@ -324,7 +324,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 <li>Dedicated tutor support when you need it – including evenings and weekends – by LiveChat or email. UK based students can request a callback</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/live-online.aspx">
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-AAT-LEARN">
                                     Learn more about Live Online
                                 </a>
                             </p>
@@ -338,7 +338,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     This fully online course allows you to progress and study when it suits you, but includes extensive tutor support and guidance giving you structure and helping you keep on track.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-CIMA-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
@@ -346,7 +346,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                      If you enjoy structured learning, Classroom may also be ideal for you.  A traditional scheduled programme with face to face tutor led classes, your tutor will guide you and your classmates through the course and help build your confidence ready for sitting your exams.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx"> View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-ACCA-TIMETABLE"> View your local timetable</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
@@ -354,7 +354,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-CIMA-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                     </div>
