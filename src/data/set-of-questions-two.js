@@ -95,7 +95,7 @@ export default {
       classroom: 2,
         //Distance Learning = 3 OnDemand = 4 Live Online=1 Classroom = 2
       }, {
-      answer: 'I should be able to fit current priorities around my studies, as long as it doesnt take up too much of my time',
+      answer: "I should be able to fit current priorities around my studies, as long as it doesn't take up too much of my time",
       distanceLearning: 2,
       onDemand: 1,
       liveOnline: 4,
@@ -134,7 +134,7 @@ export default {
       classroom: 1,
         // Distance Learning = 4 OnDemand = 2  Live Online=3 Classroom = 1
       }, {
-      answer: 'I dont enjoy online learning at all',
+      answer: "I don't enjoy online learning at all",
       distanceLearning: 1,
       onDemand: 1,
       liveOnline: 3,
@@ -209,7 +209,7 @@ export default {
     question: 'How much support do you like to have when studying? ',
     image: QuestionSevenImage,
     answers: [{
-      answer: 'I dont feel the need for regular contact and I am happy to work independently',
+      answer: "I don't feel the need for regular contact and I am happy to work independently",
       distanceLearning: 4,
       onDemand: 3,
       liveOnline: 2,

@@ -48,21 +48,21 @@ export default class ClassroomDescription extends React.Component {
                         You prefer face-to-face learning in a classroom environment, with an expert tutor to guide you and your classmates through the course.
                     </p>
                     <p className={Styles.paragraphResultTwo}>
-                        If you are new to accountancy, AAT may be the right choice for you.
+                        If you are new to accountancy, ACCA may be the right choice for you.
                     </p>
                     <div className={Styles.tryWrapper}>
                         <a
                             className={Styles.tryButton}
                             href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?timetable=aat-professional"
                             >
-                                   View your local AAT timetable now!
+                                   View your local ACCA timetable now!
                         </a>
                     </div>
                 </div>
                 <div className={Styles.bottomDescription}>
                     <div className={Styles.youGet}>
                             <p>
-                                With Kaplan Classroom for AAT, you get:
+                                With Kaplan Classroom for ACCA, you get:
                             </p>
                             <ul>
                                 <li>A timetabled series of classes, so you will always know when they're running to plan your schedule.</li>
@@ -71,7 +71,7 @@ export default class ClassroomDescription extends React.Component {
                                 <li>Improved MyKaplan with extra online content to help you study and revise outside the timetabled classes.</li>
                             </ul>
                             <p>
-                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/classroom.aspx">
+                                <a href="http://financial.kaplan.co.uk/trainingandquals/accountancy/ACCA/Pages/classroom.aspx">
                                     Learn more about Classroom courses
                                 </a>
                             </p>
@@ -85,7 +85,7 @@ export default class ClassroomDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     Live Online allows you to attend timetabled lectures remotely. You still have the structure of a timetabled course, but with the flexibility to watch lectures live at home - or anywhere else for that matter! Plus you can catch up on recordings if you miss any.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-live-online-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
                     </div>
@@ -123,7 +123,7 @@ export default class ClassroomDescription extends React.Component {
                             className={Styles.tryButton}
                             href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?timetable=aat-professional"
                             >
-                                   View your local timetable now!
+                                    View your local AAT timetable now!
                         </a>
                     </div>
                 </div>

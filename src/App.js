@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactGA from 'react-ga';
 
 import './App.css';
-import {SlideContainer, Header} from './components'
+import {SlideContainer} from './components'
 import {default as data} from './data/set-of-questions-two'
 
 ReactGA.initialize('UA-103223070-1',{
@@ -53,7 +53,7 @@ class App extends Component {
     return (
         <div>
             <div className="app">
-                <Header/>
+  
                 <SlideContainer answers={this.state.answers} 
                         begun={this.state.begun}
                         onAnswered={(answer) => this.answerQuestion(answer)}

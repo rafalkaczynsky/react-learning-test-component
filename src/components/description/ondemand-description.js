@@ -178,7 +178,7 @@ export default class OnDemandDescription extends React.Component {
                                 {this.state.onDemandShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                    This course also allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="https://kaplanprofessional.wufoo.eu/build/register-for-a-free-demo-of-cima-distance-learning/"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleLiveOnline.bind(this)} className={Styles.otherChoice}>
