@@ -255,7 +255,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.liveOnlineShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                     If you would like more flexibility with your studies, this course allows you to study independently in your own time, at your own pace, using a range of online and printed learning materials.This can be a very cost-effective way of achieving your qualification.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-AAT-DEMO"> Get your free demo</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-CIMA-DEMO"> Get your free demo</a>
                                 </p>}
                             </p>
                             <p onClick={this.handleClassroom.bind(this)} className={Styles.otherChoice}>
@@ -263,7 +263,7 @@ export default class LiveOnlineDescription extends React.Component {
                                 {this.state.classroomShowDesc &&
                                 <p className={Styles.studyMethodSmallDesc}>
                                      If you enjoy structured learning, Classroom may also be ideal for you.  A traditional scheduled programme with face to face tutor led classes, your tutor will guide you and your classmates through the course and help build your confidence ready for sitting your exams.
-                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-AAT-TIMETABLE"> View your local timetable</a>
+                                    <a href="http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-CIMA-TIMETABLE"> View your local timetable</a>
                                 </p>}
                             </p>
                     </div>

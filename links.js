@@ -66,4 +66,61 @@ Classroom - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pag
 
 --- Live Online -- 
 
+1. ACCA 
+
+DEMO - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-ACCA-DEMO"
+LEARN -  "http://financial.kaplan.co.uk/trainingandquals/accountancy/ACCA/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-ACCA-LEARN"
+
+alternatives : 
+
+DistanceLearning - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-ACCA-DEMO"
+ClassRoom - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/ACCA/Pages/acca-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-ACCA-TIMETABLE"
+
+2. AAT 
+
+DEMO - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-AAT-DEMO"
+LEARN - "http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-AAT-LEARN"
+
+alternatives : 
+
+OnDemand - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/AAT/Pages/free-ondemand-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-AAT-DEMO"
+DistanceLearning - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-AAT-DEMO"
+ClassRoom - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-AAT-TIMETABLE"
+
+3. CIMA
+
+DEMO - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-CIMA-DEMO"
+LEARN - "http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/Pages/live-online.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-CIMA-LEARN"
+
+alternatives : 
+
+OnDemand - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-CIMA-DEMO"
+DistanceLearning - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-CIMA-DEMO"
+ClassRoom - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-CIMA-TIMETABLE"
+
+
+--- OnDemand -- 
+
+1. AAT 
+
+DEMO - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/AAT/Pages/free-ondemand-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-AAT-DEMO"
+LEARN - "http://financial.kaplan.co.uk/trainingandquals/accountancy/aat/Pages/ondemand.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-AAT-LEARN"
+
+alternatives : 
+
+Distance Learning -"http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-AAT-DEMO"
+LiveOnLine -"http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-AAT-DEMO"
+ClassRoom - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/aat/Pages/timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-AAT-TIMETABLE"
+
+2. CIMA
+
+DEMO - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/professional-levels/ondemand/Pages/free-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-CIMA-DEMO"
+LEARN - "http://financial.kaplan.co.uk/trainingandquals/accountancy/cima/pages/ondemand.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=OD-CIMA-DEMO"
+
+alternatives : 
+
+Distance Learning - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-distance-learning-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=DL-CIMA-DEMO"
+LiveOnLine - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/free-live-online-demo-signup.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=LO-CIMA-DEMO"
+ClassRoom - "http://financial.kaplan.co.uk/TrainingandQuals/Accountancy/CIMA/Pages/cima-timetables.aspx?utm_source=resource&utm_medium=referral&utm_campaign=s17-5005a-b2c-study-method-quiz&utm_content=CR-CIMA-TIMETABLE"
+
 
