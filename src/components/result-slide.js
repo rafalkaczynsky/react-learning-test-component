@@ -1,20 +1,18 @@
-
 import React from 'react'
 
 import Styles from '../App.css';
-import ResultImage from '../images/book-icon-trans.png';
 
 import {
     ClassroomDescription, 
     DistanceLearningDescription, 
     LiveOnlineDescription, 
     OnDemandDescription, 
-    OtherDescription 
 } from './description'
 
 var  indx = 0;
 
 class RenderDescription extends React.Component  {
+
     render(){
         const { bestStudyMethod, qualificationSelected} = this.props
 
@@ -35,36 +33,32 @@ class RenderDescription extends React.Component  {
 }
 
 export default class ResultSlide extends React.Component {
-    constructor(props){
-        super(props)
-
-    }
 
     render(){
-
+    
     const {answers, studyMethods, questions, qualificationSelected} = this.props
     const result = answers.reduce((prev, curr, i) => {
 
         let final = []
-        let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).distanceLearning)
-        let onDemand = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).onDemand)
-        let liveOnline = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).liveOnline)
-        let classroom = parseInt(prev) + parseInt(questions[i].answers.find(a => a.answer === curr).classroom)
-         
-        qualificationSelected === ' ACCA' ? onDemand = 0 : onDemand = onDemand
+        let onDemand = 0
 
+        let distanceLearning = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].distanceLearning);
+        let liveOnline = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].liveOnline);
+        let classroom = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].classroom);
+        if (qualificationSelected !== 'ACCA') {
+            onDemand = parseInt(prev) + parseInt(questions[i].answers.filter(a => a.answer === curr)[0].onDemand);
+        }
+         
         final = [classroom, liveOnline, onDemand ,distanceLearning ] 
 
         return final 
     }, 0);
 
-    var winner = Math.max(...result)
+   let winner = Math.max.apply(null, [result[0], result[1], result[2], result[3]])
     
-    let prc = parseInt(parseFloat(winner/28)*100) + '%'
     if (result !== 0 ){
         indx = result.indexOf(winner)
     }
-
 
     const bestStudyMethod = studyMethods[indx]
 
@@ -73,7 +67,7 @@ export default class ResultSlide extends React.Component {
             <RenderDescription 
                 bestStudyMethod={bestStudyMethod} 
                 qualificationSelected={qualificationSelected}
-            />       
+            />     
         </div>)
     }
 }

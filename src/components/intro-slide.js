@@ -8,14 +8,14 @@ export default class IntroSlide extends React.Component {
 
         const {
             onBegin, 
-            title, 
             mainTitle, 
             introParagraphOne, 
             introParagraphTwo, 
             introParagraphThree,
             introParagraphFour,
-            qualificationSelected, 
-            onChange
+            onChange,
+            beginButtonDisabled,
+        
         } = this.props
 
         return(
@@ -34,15 +34,17 @@ export default class IntroSlide extends React.Component {
                         <p>{introParagraphThree}</p>
                         <p className={Styles.forthParagraph}>{introParagraphFour}</p>
                     </div>
-                    <select className={Styles.select} value={qualificationSelected} onChange={onChange}>
-                        <option value="Other" disabled selected >Choose the qualification you are interested in:</option>
-                        <option value="ACCA" >ACCA</option>
-                        <option value="CIMA" >CIMA</option>
-                        <option value="AAT" >AAT</option>  
-                        <option value="Other">Other/Unsure</option>      
-                    </select>
+                    <div className={Styles.selectWrapper}>
+                        <select defaultValue='default' onChange={onChange}>
+                            <option disabled value='default'>Choose the qualification you are interested in:</option>
+                            <option value="ACCA" >ACCA</option>
+                            <option value="CIMA" >CIMA</option>
+                            <option value="AAT" >AAT</option>  
+                            <option value="Other">Other/Unsure</option>      
+                        </select>
+                    </div>
                     <div className={Styles.beginButtonWrapper}>
-                        <button onClick={onBegin} className={Styles.beginButton}>Take the quiz!</button>
+                        <button onClick={onBegin} disabled={beginButtonDisabled} className={Styles.beginButton}>Take the quiz!</button>
                     </div>
                 </div>
             </div>

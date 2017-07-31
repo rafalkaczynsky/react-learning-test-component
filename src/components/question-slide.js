@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Styles from '../App.css';
-import IntroImage from '../images';
 
 export default class QuestionSlide extends React.Component {
 
@@ -10,37 +9,59 @@ export default class QuestionSlide extends React.Component {
 
         this.state = {
             buttonDisabled: true,
-            chosenAnswer: '',
+            chosenAnswer: null,
+            buttonFocused: false,
         }
     }
 
-    handle(e){
-        e.target.focus();
+    handleClick(e){
+        let nodeClicked = e.target.nodeName
+        let parentNodeName = e.target.parentNode.nodeName
+        let answer = null
+        e.preventDefault();
+        if  ((nodeClicked === 'BUTTON') || (nodeClicked === 'SPAN')) {
 
-        let answer = e.target.value
-        this.setState({chosenAnswer: answer, buttonDisabled: false})
-        console.log(this.state.chosenAnswer)
+            if (parentNodeName === 'BUTTON') {
+                answer = e.target.parentNode.value
+                e.target.parentNode.blur()
+                e.target.parentNode.focus()
+            } else {
+                e.target.focus()
+                answer = e.target.value
+            } 
+            
+ 
+            this.setState({chosenAnswer: answer, buttonDisabled: false, buttonFocused: true, })
+            if (answer){
+                console.log('Chosen answer: ' + answer)
+            } else {
+                console.log('No answer chosen yet ...Please select answer!')
+            }
+        } else {
+            this.setState({chosenAnswer: null, buttonDisabled: true, buttonFocused: false})
+            console.log('Answer disselected. Please select answer!')
+        }
+               
     }
 
     render(){
-        const {question, onAnswered, onPrevius, numberOfQuestions, index} = this.props
+        const {question, onAnswered, numberOfQuestions, index} = this.props
         const answersButton = question.answers.map((answer, i) => {
             return (
-                <div className={Styles.answerContainer}>
+                <div className={Styles.answerContainer} key={answer.answer}>
                     <button 
+                        type="button"
                         className={Styles.answerCircle}
-                        key={answer.answer}
-                        tabindex={i}
                         value={answer.answer}
-                        onClick={this.handle.bind(this)}>
-                        <div 
-                            className={Styles.answerText}
-                            key={answer.answer + 'text'}
-                            style={{"z-index": i + 1}}
-                            >
-                            {answer.answer}
-        
-                        </div>
+                        onClick={(e)=> e.target.focus()}
+                        >
+                            <span
+                                className={Styles.answerText}
+                                key={answer.answer + 'text'}
+                        
+                                >
+                                {answer.answer}
+                            </span>
                             <span 
                             key={answer.answer + i}
                             className={Styles.whiteCircle}
@@ -49,12 +70,11 @@ export default class QuestionSlide extends React.Component {
                 </div>
             )
         });
-
-
+        
         const currentQuestion = index + 1;
         return(
             <div className={Styles.slide}>
-                <div className={Styles.questionContainer}>
+                <div className={Styles.questionContainer} onClick={this.handleClick.bind(this)}>
                     <div className={Styles.questionContentContainer}>
                         <p className={Styles.counter}>{currentQuestion}/{numberOfQuestions}</p>
                         <img src={question.image} className={Styles.questionImage} alt="Next" />
@@ -67,14 +87,20 @@ export default class QuestionSlide extends React.Component {
                     <div className={Styles.prevNextButtonWrapper}>
                         <div className={Styles.beginButtonWrapper}>
                             <button 
+                                
                                 className={Styles.beginButtonNew}
                                 disabled={this.state.buttonDisabled}
-                                onClick={() => onAnswered(this.state.chosenAnswer)}>
+                                onClick={() => {
+                                        if(this.state.chosenAnswer && this.state.buttonFocused){
+                                            onAnswered(this.state.chosenAnswer)
+                                        }
+                                    }}>
                                     Next
                             </button>
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }

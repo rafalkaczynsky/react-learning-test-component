@@ -3,9 +3,7 @@ import React from 'react'
 
 import Styles from '../App.css';
 
-import {IntroSlide, QuestionSlide, ResultSlide} from './'
-
-import {OtherDescription} from './description'
+import {IntroSlide, QuestionSlide, ResultSlide, Spinner} from './'
 
 export default class SlideContainer extends React.Component {
 
@@ -13,21 +11,21 @@ export default class SlideContainer extends React.Component {
         super(props);
 
         this.state = {
-            qualification: ''
+            qualification: '',
+            beginButtonDisabled: true,
         };
 
         this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(event) {
-        this.setState({qualification: event.target.value})
+        this.setState({qualification: event.target.value, beginButtonDisabled: false})
     }
-
 
     render(){
 
         const { 
-            studyMethods,
+             studyMethods,
              questions, 
              answers, 
              begun, 
@@ -39,7 +37,8 @@ export default class SlideContainer extends React.Component {
              introParagraphOne, 
              introParagraphTwo, 
              introParagraphThree, 
-             introParagraphFour 
+             introParagraphFour,
+             spinnerShow,
             } = this.props
 
         const width = `${questions.length+2}00%`;
@@ -58,14 +57,9 @@ export default class SlideContainer extends React.Component {
             });
         }
 
-
-        const XXX = () => {
-            return <div> Xxxxxxasxax</div>
-        }
-
         return(
             <div className={Styles.slides} style={{width, marginLeft, opacity: 1}}>
-                
+                {spinnerShow && <Spinner />}
                 <IntroSlide 
                     onBegin={onBegin} 
                     mainTitle={mainTitle}
@@ -76,6 +70,7 @@ export default class SlideContainer extends React.Component {
                     introParagraphFour={introParagraphFour}
                     qualificationSelected={this.state.qualification} 
                     onChange={this.handleChange}
+                    beginButtonDisabled={this.state.beginButtonDisabled}
 
                 /> 
                 {renderQuestions(onAnswered, questions.length)}
@@ -89,9 +84,3 @@ export default class SlideContainer extends React.Component {
         )
     }
 }
-
-
-// Choose the qualification you are interested in: 
-// ACCA
-// CIMA
-// AAT 

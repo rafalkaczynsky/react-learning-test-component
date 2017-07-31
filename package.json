@@ -2,9 +2,11 @@
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://downatthesocial.co.uk/kaplan-demo/",
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-ga": "^2.2.0"
   },
   "devDependencies": {
     "autoprefixer": "7.1.0",
