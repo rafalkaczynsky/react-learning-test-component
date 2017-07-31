@@ -58,7 +58,7 @@ export default class ResultSlide extends React.Component {
         return final 
     }, 0);
 
-    let winner = Math.max(...result)
+    var winner = Math.max(...result)
     
     let prc = parseInt(parseFloat(winner/28)*100) + '%'
     if (result !== 0 ){
