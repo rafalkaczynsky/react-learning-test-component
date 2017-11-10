@@ -1,11 +1,11 @@
 
 # react-learning-test-component
-fund component  build with React for Marlborough
+fund component  build with React for Kaplan
 
-link to component : http://marlb.mediacabin.co.uk/fund
-link to website: http://marlb.mediacabin.co.uk
+link to component : https://kaplan.co.uk/resources/study-method-quiz
+link to website: https://kaplan.co.uk
 
-![alt text](https://github.com/rafalkaczynsky/fund-component/blob/master/screen-1.png)
+![alt text](https://github.com/rafalkaczynsky/react-learning-test-component/blob/master/screen-1.png)
 
 
 How to run it locally from command line
