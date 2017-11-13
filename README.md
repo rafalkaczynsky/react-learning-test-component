@@ -1,6 +1,6 @@
 
 # react-learning-test-component
-fund component  build with React for Kaplan
+quiz component build with React for Kaplan
 
 link to component : https://kaplan.co.uk/resources/study-method-quiz
 link to website: https://kaplan.co.uk
